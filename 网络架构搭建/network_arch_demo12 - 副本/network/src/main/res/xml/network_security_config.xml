@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+    <domain-config>
+        <domain includeSubdomains="true">service-o5ikp40z-1255468759.ap-shanghai.apigateway.myqcloud.com</domain>
+        <pin-set>
+            <pin digest="SHA-256">N8noKWx2qufgiQMgSSU3F/2GbkhirlGhxJ0U3Q7NqJU=</pin>
+            <pin digest="SHA-256">IQBnNBEiFuhj+8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4=</pin>
+            <pin digest="SHA-256">K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q=</pin>
+        </pin-set>
+    </domain-config>
+<!--            <domain-config>
+        <domain includeSubdomains="true">service-o5ikp40z-1255468759.ap-shanghai.apigateway.myqcloud.com</domain>
+            <trust-anchors>
+                <certificates src="user" />
+                <certificates src="system"/>
+            </trust-anchors>
+        </domain-config>-->
+</network-security-config>

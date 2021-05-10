@@ -1,0 +1,2 @@
+include ':app', ':network', ':news', ':xiangxuewebview', ':base', ':common'
+rootProject.name='arch_demo'

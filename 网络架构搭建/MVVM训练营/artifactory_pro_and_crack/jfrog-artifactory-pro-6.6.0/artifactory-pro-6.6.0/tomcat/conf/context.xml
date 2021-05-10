@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  ~ Artifactory is a binaries repository manager.
+  ~ Copyright (C) 2018 JFrog Ltd.
+  ~
+  ~ Artifactory is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Artifactory is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with Artifactory.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<!-- this is the default context file for every web app  -->
+<!-- see https://tomcat.apache.org/tomcat-8.0-doc/config/context.html for more info -->
+<Context>
+    <!-- disable session persistence across Tomcat restarts -->
+    <Manager pathname=""/>
+
+    <!-- in Tomcat 8.5 deactivate resource caching -->
+    <Resources cachingAllowed="false"/>
+
+    <!-- disable jar scanning for web fragments, annotations and tag libraries -->
+    <JarScanner>
+        <JarScanFilter defaultPluggabilityScan="false" pluggabilitySkip="*" pluggabilityScan="" defaultTldScan="false"/>
+    </JarScanner>
+
+    <!-- initialize rewrite valve globally (rules defined in each webapp rewrite.config) -->
+    <Valve className="org.apache.catalina.valves.rewrite.RewriteValve"/>
+</Context>

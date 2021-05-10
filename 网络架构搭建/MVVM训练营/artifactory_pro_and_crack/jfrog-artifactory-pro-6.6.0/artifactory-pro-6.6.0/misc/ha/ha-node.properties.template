@@ -1,0 +1,36 @@
+# Artifactory is a binaries repository manager.
+# Copyright (C) 2018 JFrog Ltd.
+#
+# Artifactory is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Artifactory is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with Artifactory.  If not, see <http://www.gnu.org/licenses/>.
+#
+## This is a template file for ha-node.properties. ##
+## Once edited properly, it should be located under the etc/ folder of an Artifactory HA instance ##
+
+# Unique descriptive name of this server.
+node.id=art1
+
+# If using NFS mount this property provides the full path to the root directory of your NFS binary storage. (Optional)
+#artifactory.ha.data.dir=/var/opt/jfrog/artifactory-ha
+
+# If using NFS mount this property provides the full path to the root directory of your NFS back up data. (Optional)
+#artifactory.ha.backup.dir=/var/opt/jfrog/artifactory-backup
+
+# The context url that should be used to communicate with this server within the cluster.
+context.url=http://10.0.0.121:8081/artifactory/
+
+# The port that should be used to communicate with this server within the cluster. (Optional)
+membership.port=10001
+
+# Indicates if this is the primary server. (Optional)
+primary=true

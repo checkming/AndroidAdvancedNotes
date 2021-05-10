@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">network</string>
+    <string name="network_environment_setting">开发者设置</string>
+</resources>

@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    compile group: 'com.squareup.okio', name: 'okio', version:'1.14.0'
+    compileOnly group: 'org.conscrypt', name: 'conscrypt-openjdk-uber', version:'1.0.1'
+    compileOnly group: 'com.google.android', name: 'android', version:'4.1.1.4'
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version:'3.0.2'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

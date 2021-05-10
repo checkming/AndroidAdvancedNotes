@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/get_news_channels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get_Tencent_News_Channels" />
+
+        <EditText
+            android:id="@+id/domain_input_id"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:visibility="gone"
+            android:hint="请输入域名如www.baidu.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/generate_ssl_pin_set_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成SSL的pin_set" />
+    </LinearLayout>
+</layout>

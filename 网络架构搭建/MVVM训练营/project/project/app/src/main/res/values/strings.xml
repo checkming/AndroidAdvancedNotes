@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">架构设计Demo</string>
+    <string name="menu_home">头条</string>
+    <string name="menu_categories">地区</string>
+    <string name="menu_services">服务</string>
+    <string name="menu_account">我的</string>
+    <string name="share">分享</string>
+</resources>

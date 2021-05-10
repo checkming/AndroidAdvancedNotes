@@ -1,0 +1,2 @@
+include ':app', ':network'
+rootProject.name='network_arch_demo'
