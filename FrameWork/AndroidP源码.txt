@@ -1,0 +1,13 @@
+作业一：
+
+startActivity时序图  用AndroidP的源码
+
+链接：https://pan.baidu.com/s/1RBy_yST5rtjsovX23AIXqg 
+提取码：45pm 
+复制这段内容后打开百度网盘手机App，操作更方便哦
+
+作业二：
+hookActivity demo实战
+1. hook ctivity的Instrumentation
+2. hook ActivityThread类的Instrumentation
+3. hook AMS实现启动没有注册的Activity

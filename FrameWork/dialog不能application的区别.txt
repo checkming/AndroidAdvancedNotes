@@ -1,0 +1,58 @@
+关键点
+dialog 的构造方法中 
+ mWindowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+ 如果这里的context是Activity
+ 那么 我们来看看Activity的getSystemService
+ Override
+    public Object getSystemService(@ServiceName @NonNull String name) {
+        
+
+        if (WINDOW_SERVICE.equals(name)) {//返回mWindowManager
+            return mWindowManager;
+        } 
+        return super.getSystemService(name);
+    }
+而这个mWindowManager 是在attach的过程中 调用
+Window.setWindowManager 里面的
+mWindowManager = ((WindowManagerImpl)wm).createLocalWindowManager(this);
+
+WindowManagerImpl.createLocalWindowManager(Window parentWindow)
+这里把Activity的attach中创建的phonewindow作为参数传递进来了parentWindow不为空
+所以 它创建的WindowManagerImpl 是调用的
+WindowManagerImpl(Context context, Window parentWindow) 
+里面的mParentWindow是有值的
+所以在
+WindowManagerGlobal.addView方法里面
+//在activity创建则不为空
+        if (parentWindow != null) {
+            parentWindow.adjustLayoutParamsForSubWindow(wparams);
+这adjustLayoutParamsForSubWindow 会给dialog的token赋值
+ wp.token = mContainer == null ? mAppToken : mContainer.mAppToken;	
+ 
+然而如果context 不是Activity
+context.getSystemService最终的实现是在
+SystemServiceRegistry.getSystemService的
+registerService(Context.WINDOW_SERVICE, WindowManager.class,
+                new CachedServiceFetcher<WindowManager>() {
+            @Override
+            public WindowManager createService(ContextImpl ctx) {
+                return new WindowManagerImpl(ctx);//在这里创建的WindowManagerImpl
+            }});
+调用的是WindowManagerImpl
+public WindowManagerImpl(Context context) {
+        this(context, null);
+    }
+导致mParentWindow 为空
+这样WindowManagerGlobal.addView的时候不能给token赋值
+因为token赋值是在parentWindow不为空的情况下 在adjustLayoutParamsForSubWindow里面赋值的
+if (parentWindow != null) {
+            parentWindow.adjustLayoutParamsForSubWindow(wparams);
+
+
+
+
+
+
+
+
+ 

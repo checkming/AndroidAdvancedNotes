@@ -1,0 +1,1 @@
+java -jar signapk.jar platform.x509.pem platform.pem  需要签名的apk   签名之后的apk

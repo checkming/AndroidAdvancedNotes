@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiangxue.launchmode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.xiangxue.launchmode.MainActivity" android:taskAffinity="com.xiangxue.launchmode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.xiangxue.launchmode.StandardAActivity" android:launchMode="standard"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.StandardBActivity" android:launchMode="standard"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.StandardCActivity" android:launchMode="standard" android:taskAffinity="com.xiangxue.launchmode.another" />
+
+        <activity android:name="com.xiangxue.launchmode.SingleTopAActivity" android:launchMode="singleTop"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.SingleTopBActivity" android:launchMode="singleTop"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.SingleTopCActivity" android:launchMode="singleTop" android:taskAffinity="com.xiangxue.launchmode.another" />
+
+        <activity android:name="com.xiangxue.launchmode.SingleTaskAActivity" android:launchMode="singleTask"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.SingleTaskBActivity" android:launchMode="singleTask"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.SingleTaskCActivity" android:launchMode="singleTask" android:taskAffinity="com.xiangxue.launchmode.another" />
+
+        <activity android:name="com.xiangxue.launchmode.SingleInstanceAActivity" android:launchMode="singleInstance"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.SingleInstanceBActivity" android:launchMode="singleInstance"  android:taskAffinity="com.xiangxue.launchmode"/>
+        <activity android:name="com.xiangxue.launchmode.SingleInstanceCActivity" android:launchMode="singleInstance" android:taskAffinity="com.xiangxue.launchmode.another" />
+
+
+        <activity android:name="com.xiangxue.launchmode.forwardresult.ForwardAActivity" android:label="forwardresult">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiangxue.launchmode.forwardresult.ForwardBActivity"/>
+        <activity android:name="com.xiangxue.launchmode.forwardresult.ForwardCActivity"/>
+    </application>
+
+</manifest>

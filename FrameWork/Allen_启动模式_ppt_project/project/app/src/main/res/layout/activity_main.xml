@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_task"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="30%">
+
+        <LinearLayout
+            android:id="@+id/ll_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/hsv_task"
+        android:background="#bebebe" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/sep"
+        app:layout_heightPercent="70%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_ctrl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/btn_start_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="startActivity"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="id" />
+
+                <Button
+                    android:id="@+id/btn_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exit"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_launch_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_ctrl_top"
+                android:checkedButton="@+id/rb_mode_standard_a"
+                android:orientation="vertical"
+                app:layout_widthPercent="50%">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="为定义者准备的, 定义在Manifest里面" />
+                <!--Standard-->
+                <RadioButton
+                    android:id="@+id/rb_mode_standard_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="standard A" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_standard_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="standard B" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_standard_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="standard C\n(another affinity)" />
+
+                <!--SingleTop-->
+                <RadioButton
+                    android:id="@+id/rb_mode_single_top_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleTop A" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_single_top_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleTop B" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_single_top_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleTop C\n(another affinity)" />
+
+                <!--SingleTask-->
+                <RadioButton
+                    android:id="@+id/rb_mode_single_task_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleTask A" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_single_task_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleTask B" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_single_task_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleTask C\n(another affinity)" />
+
+                <!--SingleInstance-->
+                <RadioButton
+                    android:id="@+id/rb_mode_single_instance_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleInstance A" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_single_instance_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleInstance B" />
+
+                <RadioButton
+                    android:id="@+id/rb_mode_single_instance_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="singleInstance C\n(another affinity)" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_flag"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_ctrl_top"
+                android:layout_toRightOf="@id/rg_launch_mode"
+                android:orientation="vertical"
+                app:layout_widthPercent="50%">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Intent Flag是为启动者准备的，当然部分属性也可以在定义者的Manifest里定义" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="1、只队新Task有效" />
+                <CheckBox
+                    android:id="@+id/cb_flag_new_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="NEW_TASK" />
+
+
+
+                <CheckBox
+                    android:id="@+id/cb_flag_clear_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="CLEAR_TASK" />
+
+                <CheckBox
+                    android:id="@+id/cb_flag_task_on_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="TASK_ON_HOME" />
+
+                <CheckBox
+                    android:id="@+id/cb_flag_exclude_from_recents"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="EXCLUDE_FROM_RECENTS" />
+
+                <CheckBox
+                    android:id="@+id/cb_flag_retain_in_recents"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="RETAIN_IN_RECENTS" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="MULTIPLE_TASK不建议和NEW_TASK一起使用，因为无法再Recents里出现，除非自己是LAUNCHER， 但是可以和NEW_DOCUMENT结合" />
+                <CheckBox
+                    android:id="@+id/cb_flag_multiple_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MULTIPLE_TASK(只对standard有效)" />
+                <CheckBox
+                    android:id="@+id/cb_flag_new_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="NEW_DOCUMENT" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="2、只对当前Task有效" />
+                <CheckBox
+                    android:id="@+id/cb_flag_single_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="SINGLE_TOP" />
+
+                <CheckBox
+                    android:id="@+id/cb_flag_clear_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="CLEAR_TOP" />
+
+                <CheckBox
+                    android:id="@+id/cb_flag_reorder_to_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="REORDER_TO_FRONT" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="3、和Task无关，Home和Navigate会自动Finish" />
+
+                <CheckBox
+                    android:id="@+id/cb_flag_no_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="NO_HISTORY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="4、父Activity作为启动Acitvity, 自己启动完后主动Finish" />
+                <CheckBox
+                    android:id="@+id/cb_flag_previous_is_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="PREVIOUS_IS_TOP" />
+            </LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+
+</android.support.percent.PercentRelativeLayout>
