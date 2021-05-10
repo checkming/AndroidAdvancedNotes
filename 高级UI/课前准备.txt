@@ -1,0 +1,1 @@
+allen老师给大家讲一次git的基本使用，用于管理我们的代码，请大家做好git的基本准备，大家可以参考：https://www.liaoxuefeng.com/wiki/896043488029600 准备基本的内容

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">animationdemo</string>
+
+    <string name="alpha_animation">AlphaAnimation</string>
+    <string name="rotate_animation">RotateAnimation</string>
+    <string name="scale_animation">ScaleAnimation</string>
+    <string name="translate_animation">TranslateAnimation</string>
+    <string name="animation_set">AnimationSet</string>
+
+    <string name="action_byxml">加载Xml方式</string>
+    <string name="action_bycode">Java代码实现</string>
+    <string name="action_bycustom">自定义属性动画</string>
+    <string name="action_byviewpropertyanimator">ViewPropertyAnimator</string>
+    <string name="action_bylayoutanimator">LayoutAnimator(hide/show)</string>
+
+</resources>

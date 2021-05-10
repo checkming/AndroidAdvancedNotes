@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -x /etc/systemd/system/artifactory.service ]; then
+    # Delegate to systemd service
+    systemctl "$@" artifactory.service
+elif [ -x /etc/init.d/artifactory ]; then
+    # Delegate to init.d service
+    /etc/init.d/artifactory "$@"
+else
+    # call artifactory.sh
+    artBinDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    ${artBinDir}/artifactory.sh "$@"
+fi

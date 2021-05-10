@@ -1,0 +1,48 @@
+自定义动起来的drawable
+
+
+思路：
+观察这个动画 由哪些流程组成 （动画分解）
+
+1 初始状态：
+  背景 
+  圆圈  
+  叉  
+2 旋转动画 时长 
+  圆圈从-90 逆时针方向旋转 3圈 -1080度
+  叉 缩小为一个圆点
+3 圆点上移 时长
+4 圆点下移 时长
+5 由一个圆点 变成 一个勾勾 时长
+
+动画编排
+ValueAnimator 改变属性的值
+addUpdateLister 
+ onAnimationUpdate(){
+    获取属性值
+	invalidateSelf();
+ }
+ 
+旋转动画 matrix setrotate 0 -> 1   旋转
+ 度数 * totateDegreeScale(系数 百分比)
+ 
+叉 - > 圆点   1 -> 0
+  叉的长度 * 系数
+ 
+圆点上移  平移 0 -> 1 上移
+ 
+圆点下移  平移 0 -> 1 下移
+
+画勾勾 0 -> 1 
+
+延时 -> 初始状态 addListener onAnimationEnd  状态 = 初始状态 invalidateSelf
+
+
+已知角度θ 半径r 
+A（x,y）  中心点( cx,cy)
+x = r * cosθ
+y = r * sinθ
+
+x1 = cx - r * cosθ
+y1 =  cy  + r * sinθ 
+画线 两个点  起始点   

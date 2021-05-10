@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.arch.demo.common.views.titleview.TitleViewViewModel" />
+
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils" />
+        <import type="androidx.databinding.ObservableField" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="16dp"
+            android:id="@+id/item_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="center_vertical"
+            android:text="@{viewModel.title}"
+            android:textColor="#303030"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#303030" />
+    </LinearLayout>
+</layout>

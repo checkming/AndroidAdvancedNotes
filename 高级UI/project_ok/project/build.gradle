@@ -1,0 +1,74 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        maven {
+            url 'http://localhost:8081/artifactory/android_group/'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        jcenter()
+        google()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.billy.android:cc-register:1.1.1' //使用最新版
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'http://localhost:8081/artifactory/android_group/'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        google()
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 21
+    targetSdkVersion = 28
+    androidXVersion = '1.0.0'
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    constraint_version = '1.1.2'
+
+    /* For upload libraries to local Nexus */
+    artifactoryUrl = 'http://localhost:8081/artifactory/android_local_2'
+    artifactoryUser = 'xiangxue'
+    artifactoryPass = 'xiangxue'
+    xiangxuePackageName = 'com.xiangxue.libraries'
+
+    xiangxueBaseVersion = '1.0.3'
+}

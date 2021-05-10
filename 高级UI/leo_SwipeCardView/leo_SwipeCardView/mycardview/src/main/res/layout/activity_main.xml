@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--圆角问题：app:cardPreventCornerOverlap="false" 默认值也是true padding
+    设置为false只是去掉了padding-->
+
+    <!--阴影问题：方案一：设置layout_margin
+        方案二：cardUseCompatPadding= true 解决阴影问题-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <com.enjoy.mycardview.RoundImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_1" />
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

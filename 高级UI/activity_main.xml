@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <com.zero.flowlayoutdemo.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:text="小麻小儿郎呀" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="小麻小儿郎呀" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:text="生活不止眼前的苟且，还有诗和远方" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小麻小儿郎呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello hi ..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你是谁呀" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="人在他在，塔亡人亡"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活不止眼前的苟且，还有诗和远方1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:text="发电房" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是结束" />
+
+    </com.zero.flowlayoutdemo.FlowLayout>
+<!--</ScrollView>-->
+</LinearLayout>

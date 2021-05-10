@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.youth.banner:banner:1.4.10'  //最新版本
+    if (gradle.ext.includeXiangxueBaseSource) {
+        api project(':base')
+    } else {
+        api("com.xiangxue.libraries:XiangxueBase:$rootProject.xiangxueBaseVersion@aar") {
+            transitive = true
+        }
+    }
+
+    implementation "androidx.cardview:cardview:$rootProject.androidXVersion"
+    api project(':xiangxuewebview')
+}

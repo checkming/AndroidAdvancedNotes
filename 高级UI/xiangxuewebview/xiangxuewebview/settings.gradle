@@ -1,0 +1,1 @@
+include ':app', ':xiangxuewebview', ':base', ':servicemanager', ':common'

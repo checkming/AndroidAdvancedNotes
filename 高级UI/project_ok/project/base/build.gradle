@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    api "androidx.appcompat:appcompat:$rootProject.androidXVersion"
+    api 'com.google.code.gson:gson:2.8.2'
+    //Lottie是Airbnb开源的一个支持 Android、iOS 以及 ReactNative，利用json文件的方式快速实现动画效果的库
+    api 'com.airbnb.android:lottie:2.8.0'
+    api "androidx.recyclerview:recyclerview:$rootProject.androidXVersion"
+    api 'com.kingja.loadsir:loadsir:1.3.6'
+
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+    //引入rxjava
+    api 'io.reactivex.rxjava2:rxjava:2.1.16'
+}
+
+/* 修复后发布新版的步骤为：
+* 1、更改root project的emojiLibraryVersion版本号
+* 2、在项目的根目录项执行gradlew.bat emojilibrary:upload
+* */
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: rootProject.artifactoryUrl) {
+                authentication(userName: rootProject.artifactoryUser, password: rootProject.artifactoryPass)
+                pom.groupId = rootProject.xiangxuePackageName
+                pom.artifactId = "XiangxueBase"
+                pom.version = rootProject.xiangxueBaseVersion
+            }
+        }
+    }
+}

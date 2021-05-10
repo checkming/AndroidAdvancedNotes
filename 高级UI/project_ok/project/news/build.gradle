@@ -1,0 +1,37 @@
+apply from: rootProject.file('cc-settings-2.gradle')
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    implementation "com.google.android.material:material:$rootProject.androidXVersion"
+    implementation project(":common")
+    implementation project(":network_api")
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-7'//没有使用特殊Header，可以不加这行
+}

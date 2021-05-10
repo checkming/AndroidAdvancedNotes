@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    if (gradle.ext.includeXiangxueBaseSource) {
+        api project(':base')
+    } else {
+        api("com.xiangxue.libraries:XiangxueBase:$rootProject.xiangxueBaseVersion@aar") {
+            transitive = true
+        }
+    }
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.guava:guava:23.3-android'
+    implementation "com.squareup.okhttp3:logging-interceptor:3.8.1"
+    //引入rxjava适配器，方便rxjava与retrofit的结合
+    api 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+    //引入rxandroid
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    api 'io.reactivex:rxandroid:1.2.1'
+}

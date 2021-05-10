@@ -1,0 +1,163 @@
+
+为什么要自定义View
+1. Android系统内置View无法实现我们的需求
+2. 处于性能考虑
+
+
+自定义ViewGroup: 则只需要重写onMeasure()和onLayout()
+
+
+onMeasure：
+1. 确定自身的大小
+2. 确定子view的大小
+
+尺寸： 200dp, match_parent, wrap_content
+
+流程：
+1. ViewGroup开始测量自己的尺寸
+2. 为每个子View计算测量的限制信息
+3. 把上一步确定的限制信息，传递给每一个子View，然后子View开始measure
+自己的尺寸
+4. 获取子View测量完成后的尺寸
+5. ViewGroup根据自身的情况，计算自己的尺寸
+6. 保存自身的尺寸
+
+onLayout
+1. 根据规则确定子view位置
+
+流程：
+1. 遍历子View for
+2. 确定自己的规则
+3. 子View的测量尺寸
+4. left,top,right,bottom
+6. child.layout
+
+
+
+流式布局：把子控件从左到右的排放，如果一行放不下，那么自动换行
+
+
+自定义布局流程：
+1. 自定义属性：声明，设置，解析获取自定义值
+在attr.xml 声明：
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<declare-styleable name="FlowLayout">
+		<attr name="android:gravity" />
+		<attr name="horizonSpacing" format="dimension|reference"/>
+	</declare-styleable>
+	<declare-styleable name="FlowLayout_Layout">
+		<attr name="android:layout_gravity" />
+	</declare-styleable>
+</resources>
+2. 自定义属性： 引入命名空间
+xmlns:app="http://schemas.android.com/apk/res-auto"
+3. 解析：
+ TypedArray a = c.obtainStyledAttributes(attrs,R.styleable.FlowLayout_Layout);
+            try{
+               gravity = a.getInt(R.styleable.FlowLayout_Layout_android_layout_gravity,-1); 
+            }finally {
+                a.recycle();
+            }
+
+
+
+2. 测量：在onMeasure MeasureSpec.AT_MOST/EXACTlY 
+ 自身的宽高/child的宽高
+ FlowLayout 本身 宽 AT_MOST(FlowLayout父层给的限制)  layout_width:wrap_content: 给默认值，宽度最大的
+ 
+ AT_MOST: 所有的行数的累加的高度
+ 
+ 子View： layout_height wrap_content child layout_height match_parent: 这一行里面高度最大的
+ 
+ 
+3. 布局：在onLayout方法里面根据自己规则来确定children的位置
+
+
+
+4. 绘制：onDraw
+5. 处理LayoutParams 
+6. 触摸反馈：滑动事件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

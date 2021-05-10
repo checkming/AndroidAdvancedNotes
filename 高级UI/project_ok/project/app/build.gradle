@@ -1,0 +1,52 @@
+ext.mainApp = true //标记为主app module
+apply from: rootProject.file('cc-settings-2.gradle')
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        //仅在以application方式编译时才添加applicationId属性
+        if (project.ext.runAsApp) {
+            applicationId "com.arch.demo"
+        }
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }/*
+    https://console.cloud.tencent.com/servicemarket/services
+    */
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    signingConfigs {
+    }
+}
+
+dependencies {
+    implementation "com.google.android.material:material:$rootProject.androidXVersion"
+    api project(':common')
+    api project(':network_api')
+    implementation 'q.rorbin:badgeview:1.1.3'
+
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+    addComponent 'usercenter' //会默认添加依赖：project(':demo_component_a')
+    addComponent 'news' //会默认添加依赖：project(':demo_component_a')
+}

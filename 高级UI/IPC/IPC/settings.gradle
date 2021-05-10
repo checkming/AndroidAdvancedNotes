@@ -1,0 +1,1 @@
+include ':app', ':ipc', ':ipc2', ':app2'

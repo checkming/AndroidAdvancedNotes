@@ -1,0 +1,118 @@
+技术角度：
+res/ 资源都是可以替换
+color
+背景色
+文字颜色
+字体
+图片
+
+产品角度：
+产品经理 + 视觉效果  - 》 代码
+
+
+换肤需要解决的关键问题
+如何加载外部的资源包
+如何确定哪些控件需要替换资源
+
+=================================
+如何确定哪些控件需要替换资源
+	1. 如何拦截系统创建view的流程
+	2. 如何设别哪些view需要换肤
+
+
+1. 如何拦截系统创建view的流程
+拦截系统创建view的流程：
+关键点：Factory2
+
+1. setFactory2 mFactory2 
+2. setFactory mFactory
+3. mPrivateFactory  反射
+
+如何实现拦截
+1. 反射mFactorySet 设置为false
+2. setFactory2 设置你的换肤的Factory
+
+
+2. 如何设别哪些view需要换肤
+产品经理 + 视觉效果  - 》 代码
+
+技术方案：
+1. 自定义属性
+	自定义一个attr isSupport 
+	1.在attr.xml 定义一个属性 支持是否换肤
+	<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<declare-styleable name="Skinable">
+			<attr name="isSupport" format="boolean" />
+		</declare-styleable>
+	</resources>
+	2. 引入  xmlns:app="http://schemas.android.com/apk/res-auto"
+     app:isSupport="true"
+	3. TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Skinable);
+        boolean isSupport = a.getBoolean(R.styleable.Skinable_isSupport, false); 
+
+2. 定义接口标识支持换肤 SkinSupport
+	1. 把所有的系统View都重新实现一遍 
+	2. 遍历
+
+
+知识  ！= 能力
+
+教知识 + 习技能 = 得能力
+
+3. 然后加载外部资源
+从Resources 获取
+从 ResourcesImpl 获取
+从 AssetManager获取
+
+apk  res  appt2 - > arsc 
+R id == 资源
+
+AssetManager 二进制文件 id  获取相应的资源 底层
+
+获取AssetManager 
+1. Context.getAssets
+2. 反射
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

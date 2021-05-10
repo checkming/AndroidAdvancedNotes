@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/openWeb1"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="打开网页"
+        android:padding="15dp"
+        android:background="#666666"/>
+
+    <TextView
+        android:id="@+id/openWeb2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="打开定制网页"
+        android:padding="15dp"
+        android:background="#666666"/>
+
+    <TextView
+        android:id="@+id/openWeb3"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="打开定制头信息网页"
+        android:padding="15dp"
+        android:background="#666666"/>
+
+</LinearLayout>

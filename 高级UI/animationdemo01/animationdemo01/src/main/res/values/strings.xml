@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">animationdemo01</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name_transition">Transition Animation</string>
+    <string name="app_name_control">Control Animation</string>
+    <string name="app_name_loading">Loading Animation</string>
+    <string name="app_name_special">Special Animation</string>
+    <string name="app_name_unlock">Unlock Animation</string>
+    <string name="app_name_train">Train Animation</string>
+</resources>

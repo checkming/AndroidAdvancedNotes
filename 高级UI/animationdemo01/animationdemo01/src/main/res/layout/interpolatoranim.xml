@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="78dp"
+        android:layout_height="118dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="加速插值器" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="减速插值器" />
+    
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="加速减速插值器" />
+    
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="先反向后加速插值器" />
+    
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="过量插值器" />
+    
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="回弹插值器" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="循环插值器" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义插值器" />
+    
+</LinearLayout>

@@ -1,0 +1,5 @@
+gradle.ext.includeXiangxueBaseSource = true
+if (gradle.ext.includeXiangxueBaseSource) {
+    include ':base'
+}
+include ':app', ':network_api', ':common', ':usercenter', ':news', "xiangxuewebview"

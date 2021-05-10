@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arch.demo.common">
+
+    <application>
+        <activity android:name=".webview.WebActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/WebviewTheme"
+            android:process=":remoteweb"/>
+    </application>
+
+</manifest>
