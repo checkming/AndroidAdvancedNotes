@@ -1,0 +1,4 @@
+预习资料：
+
+Battery Historian2.0环境怎么搭建链接：https://www.jianshu.com/p/378cf678bdeb
+
