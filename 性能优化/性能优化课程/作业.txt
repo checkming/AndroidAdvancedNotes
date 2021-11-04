@@ -1,0 +1,4 @@
+1. 运行adb shell am start -W 包名/Activity名称
+查看 thistime totaltime waitertime
+2. 用systrace 抓下冷启动的过程，用谷歌浏览器打开分析下掉帧的地方，然后找出耗时比较长的 在抓一段trace文件，用traceview具体分析是哪个地方耗时？
+3. 找一个有滑动列表的页面 抓下sysrace,然后再用traceview分析下

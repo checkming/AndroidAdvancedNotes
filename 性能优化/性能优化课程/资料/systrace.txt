@@ -1,0 +1,162 @@
+
+报错: ImportError: No module named win32con 
+
+
+1. 安装pypiwin32 
+pip install pypiwin32
+
+2. 如果pip版本低了 先升级pip
+python -m pip install --upgrade pip
+
+/sdk/tools/目录下
+monitor.bat 打开Android Device Monitor
+
+
+线程：
+Process.setThreadPriority()/ Thread
+
+thread_priority_display = -4
+
+thread_priority_foreground = -2
+
+thread_priority_default = 0
+
+thread_priority_background = 10
+
+thread_priority_lowest = 19
+
+
+内存 
+内存大 -> GC -> stop the world 
+
+应用层
+ measure layout draw(在屏幕上绘制？  不是)
+ 
+ bitmap  软件绘制 复用机制
+         硬件加速 失效了
+		 
+view 无限大 屏幕大小有限	
+
+一个App -SurfaceFlinger  创建一个SharedClient 31 SharedBufferStack 
+
+白屏 黑屏 哪儿来的
+ 启动根Activity  ActivityStack#startActivityLocked 
+ call showStartingWindow 
+
+
+Application onCreate 看几个进程 3 
+
+
+D:\Android\sdk\platform-tools\systrace>adb shell
+generic_x86:/ $ am start -W com.example.myapplication/com.example.myapplication.AppStartActivity
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.myapplication/.AppStartActivity }
+Status: ok
+Activity: com.example.myapplication/.AppStartActivity
+ThisTime: 4696
+TotalTime: 4696
+WaitTime: 4768
+Complete
+
+
+`sched`: CPU调度的信息，非常重要；你能看到CPU在每个时间段在运行什么线程；线程调度情况，比如锁信息。
+`gfx`：Graphic系统的相关信息，包括SerfaceFlinger，VSYNC消息，Texture，RenderThread等；分析卡顿非常依赖这个。
+`view`: View绘制系统的相关信息，比如onMeasure，onLayout等；对分析卡顿比较有帮助。
+`am`：ActivityManager调用的相关信息；用来分析Activity的启动过程比较有效。
+
+
+systrace.py -t 10 -o d:/mytrace.html sched gfx view am -a com.example.myapplication
+
+chrome://tracing/
+
+systrace  
+功能： 分析UI卡顿问题
+       app启动流程
+	   分析 锁性能
+
+1. 测试列表滑动， 桌面滑动等流畅性问题
+gfx input view
+
+2. 若在上面的基础上 还需要分析HWUI
+gfx input view hwui  
+
+3. 测试app启动或者进入某个界面的速度
+gfx input view am  wm res
+
+4. 怀疑有GC或者是IO导致的卡顿
+gfx input view dalvik disk 
+
+5. 怀疑有power相关的问题 
+gfx input view res am wm power
+
+systrace 查看线程状态
+绿色：运行中
+作用： 查看Running状态的线程，查看其运行的时间，与竞品做对比，分析快或者慢的原因
+
+是否频率不够
+是否跑在了小核上
+是否在Running 与Runnable之间切换？ 为什么？ 
+是否在Running 与Sleep之间切换？ 为什么？
+
+蓝色：
+作用：Runnable状态的线程持续时间越长，则表示cpu调度越忙，没有及时处理这个任务
+
+是否后台有太多的任务在跑
+是否频率太低
+被限制某个具体的cpuset cpu很满？
+此时Running状态的线程是哪个？ 为什么？ 
+
+白色： 
+作用： 一般都是在等待事情驱动 在互斥锁上被阻塞
+
+橘色 不可中断的睡眠态？ 一般都是线程在IO上被阻塞 或者等待磁盘操作 IO操作很慢
+大量的橘色出现 表明 低内存状态
+
+
+紫色： 可中断的睡眠态
+线程在另一个内核上被阻塞  
+有可能是正常的
+也有可能是不正常的
+
+Linux 进程状态：
+D 无法中断的休眠状态 (IO 进程)
+R 正在可运行队列中的
+S 休眠状态
+T 停止
+W 内存交换
+X 死掉的进程
+Z 僵尸进程
+
+假设 -》 验证 -》定位问题(缩小范围) -》 定位细节问题 
+systrace 
+
+
+	   
+Android 自带的控件 拼接 要这么多层 
+-》 自定义View绘制
+
+
+
+
+
+adb shell am start -W com.example.myapplication/com.example.myapplication.AppStartActivity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

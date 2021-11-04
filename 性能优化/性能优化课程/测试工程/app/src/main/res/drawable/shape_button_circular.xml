@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--相当于做了一张圆角的图片,然后给button作为背景图片-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFE7BA" />
+    <padding android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"/>
+    <!--设置圆角-->
+    <corners android:radius="25dp" />
+</shape>
