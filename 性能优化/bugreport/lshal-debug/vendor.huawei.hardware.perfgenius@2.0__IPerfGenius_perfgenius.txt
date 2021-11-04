@@ -1,0 +1,9 @@
+servivce version: 5.0.0
+core version: 5.0.1
+incorrect arguments number 0
+usage: 
+--help:                      print debug usage info 
+--logon:                     open info log 
+--logon_debug:               open debug log 
+--logoff:                    close log 
+

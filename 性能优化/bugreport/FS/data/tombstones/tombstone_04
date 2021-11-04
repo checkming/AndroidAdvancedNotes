@@ -1,0 +1,2494 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'HONOR/STF-AL10/HWSTF:8.0.0/HUAWEISTF-AL10/359(C00GT):user/release-keys'
+Revision: '0'
+ABI: 'arm'
+pid: 816, tid: 9853, name: Binder:816_4  >>> /system/bin/mediadrmserver <<<
+signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+Abort message: 'Status.cpp:149] Failed HIDL return status not checked: Status(EX_TRANSACTION_FAILED): 'DEAD_OBJECT: ''
+    r0 00000000  r1 0000267d  r2 00000006  r3 00000008
+    r4 00000330  r5 0000267d  r6 f2f0a668  r7 0000010c
+    r8 00000000  r9 f3623f40  sl f3f8e109  fp f2f0a808
+    ip 00000000  sp f2f0a658  lr f38bc4e7  pc f38ed97c  cpsr 200f0010
+    d0  454a424f5f444143  d1  7574617473206e54
+    d2  686320746f6e203a  d3  53203a64656b6320
+    d4  5845287375746174  d5  4341534e4152545f
+    d6  4941465f4e4f4954  d7  4427203a2944454c
+    d8  000003f500000330  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 2e74736973726570  d17 2e6761742e676f6c
+    d18 44454c4941465f4e  d19 0000000000198c50
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00 pc 0004b97c  /system/lib/libc.so (tgkill+12)
+    #01 pc 0001a4e3  /system/lib/libc.so (abort+54)
+    #02 pc 0000755f  /system/lib/libbase.so (_ZN7android4base14DefaultAborterEPKc+6)
+    #03 pc 00007e35  /system/lib/libbase.so (_ZN7android4base10LogMessageD2Ev+456)
+    #04 pc 000067bb  /system/lib/libhidlbase.so (_ZN7android8hardware7details13return_statusD2Ev+182)
+    #05 pc 00025669  /system/lib/libmediadrm.so (_ZN7android6DrmHal13destroyPluginEv+92)
+    #06 pc 0002170f  /system/lib/libmediadrm.so (_ZN7android5BnDrm10onTransactEjRKNS_6ParcelEPS1_j+3638)
+    #07 pc 00040e2b  /system/lib/libbinder.so (_ZN7android7BBinder8transactEjRKNS_6ParcelEPS1_j+70)
+    #08 pc 00048c8b  /system/lib/libbinder.so (_ZN7android14IPCThreadState14executeCommandEi+582)
+    #09 pc 00048949  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+112)
+    #10 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #11 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #12 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #13 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #14 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2f0a618  00000095
+         f2f0a61c  f40d4f3d  /system/lib/libbase.so (_ZNKSt3__18functionIFvN7android4base5LogIdENS2_11LogSeverityEPKcS6_jS6_EEclES3_S4_S6_S6_jS6_+68)
+         f2f0a620  f2f0a634
+         f2f0a624  f2f0a630
+         f2f0a628  f2f0a62c
+         f2f0a62c  f3630760  [anon:libc_malloc]
+         f2f0a630  00000095
+         f2f0a634  f3c6a552  /system/lib/libhidlbase.so
+         f2f0a638  00000000
+         f2f0a63c  00000000
+         f2f0a640  ffffffdf
+         f2f0a644  00000000
+         f2f0a648  00000330
+         f2f0a64c  5c88098c
+         f2f0a650  00000330
+         f2f0a654  f38bc4dd  /system/lib/libc.so (abort+48)
+    #00  f2f0a658  f40dc030  /system/lib/libbase.so
+         ........  ........
+    #01  f2f0a658  f40dc030  /system/lib/libbase.so
+         f2f0a65c  f2f0a690
+         f2f0a660  f3630760  [anon:libc_malloc]
+         f2f0a664  00000061
+         f2f0a668  ffffffdf
+         f2f0a66c  f2f0a6e0
+         f2f0a670  f2f0a690
+         f2f0a674  f3630760  [anon:libc_malloc]
+         f2f0a678  00000061
+         f2f0a67c  f40d4563  /system/lib/libbase.so (_ZN7android4base10LogdLoggerC2ENS0_5LogIdE)
+    #02  f2f0a680  00000061
+         f2f0a684  f40d4e37  /system/lib/libbase.so (_ZN7android4base10LogMessageD2Ev+458)
+    #03  f2f0a688  f3630760  [anon:libc_malloc]
+         f2f0a68c  f36192d0  [anon:libc_malloc]
+         f2f0a690  00000061
+         f2f0a694  00000055
+         f2f0a698  f3630760  [anon:libc_malloc]
+         f2f0a69c  f3630760  [anon:libc_malloc]
+         f2f0a6a0  5c88098c
+         f2f0a6a4  f2f0a704
+         f2f0a6a8  f2f0a9c8
+         f2f0a6ac  f364ac80  [anon:libc_malloc]
+         f2f0a6b0  f2f0a6d4
+         f2f0a6b4  00000000
+         f2f0a6b8  f3623f40  [anon:libc_malloc]
+         f2f0a6bc  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2f0a6c0  f2f0a808
+         f2f0a6c4  f3c667bf  /system/lib/libhidlbase.so (_ZN7android8hardware7details13return_statusD2Ev+186)
+    #04  f2f0a6c8  00000006
+         f2f0a6cc  ffffffff
+         f2f0a6d0  f330c6e0  [anon:libc_malloc]
+         f2f0a6d4  00000031
+         f2f0a6d8  0000002e
+         f2f0a6dc  f330f3c0  [anon:libc_malloc]
+         f2f0a6e0  f364ac80  [anon:libc_malloc]
+         f2f0a6e4  5c88098c
+         f2f0a6e8  f3623f40  [anon:libc_malloc]
+         f2f0a6ec  f3623f7c  [anon:libc_malloc]
+         f2f0a6f0  f2f0a704
+         f2f0a6f4  00000004
+         f2f0a6f8  f2f0a928
+         f2f0a6fc  f3f2166d  /system/lib/libmediadrm.so (_ZN7android6DrmHal13destroyPluginEv+96)
+    #05  f2f0a700  00000000
+         f2f0a704  ffffff7f
+         f2f0a708  ffffffe0
+         f2f0a70c  00000000
+         f2f0a710  00000000
+         f2f0a714  00000000
+         f2f0a718  5c880901
+         f2f0a71c  5c88098c
+         f2f0a720  f2f0a808
+         f2f0a724  f3623f44  [anon:libc_malloc]
+         f2f0a728  f2f0a83c
+         f2f0a72c  f3f1d711  /system/lib/libmediadrm.so (_ZN7android5BnDrm10onTransactEjRKNS_6ParcelEPS1_j+3640)
+    #06  f2f0a730  5c88098c
+         f2f0a734  f3303f00  [anon:libc_malloc]
+         f2f0a738  f3303f00  [anon:libc_malloc]
+         f2f0a73c  f3303f2c  [anon:libc_malloc]
+         f2f0a740  00000000
+         f2f0a744  f4250fc9  /system/lib/libbinder.so (_ZNK7android6Parcel10readIntPtrEv+20)
+         f2f0a748  00007206
+         f2f0a74c  5c88098c
+         f2f0a750  00000000
+         f2f0a754  f424b25b  /system/lib/libbinder.so (_ZN7android14IPCThreadState15waitForResponseEPNS_6ParcelEPi+114)
+         f2f0a758  00000040
+         f2f0a75c  f2f0a778
+         f2f0a760  f332d504  [anon:libc_malloc]
+         f2f0a764  f2f0a798
+         f2f0a768  f2f0a790
+         f2f0a76c  f2f0a7a0
+         ........  ........
+    #07  f2f0a7e0  00000010
+         f2f0a7e4  f3303f00  [anon:libc_malloc]
+         f2f0a7e8  00000000
+         f2f0a7ec  f4242de5  /system/lib/libbinder.so (_ZN7android7BBinder8transactEjRKNS_6ParcelEPS1_j)
+         f2f0a7f0  f3303f98  [anon:libc_malloc]
+         f2f0a7f4  f424ac8d  /system/lib/libbinder.so (_ZN7android14IPCThreadState14executeCommandEi+584)
+    #08  f2f0a7f8  00000010
+         f2f0a7fc  f424b701  /system/lib/libbinder.so (_ZN7android14IPCThreadState10freeBufferEPNS_6ParcelEPKhjPKyjPv)
+         f2f0a800  f3303f00  [anon:libc_malloc]
+         f2f0a804  f366a000  [anon:libc_malloc]
+         f2f0a808  00000000
+         f2f0a80c  00000000
+         f2f0a810  00000000
+         f2f0a814  00000000
+         f2f0a818  00000000
+         f2f0a81c  00000000
+         f2f0a820  00000000
+         f2f0a824  00000000
+         f2f0a828  00000000
+         f2f0a82c  01000100
+         f2f0a830  00000000
+         f2f0a834  f36307b4  [anon:libc_malloc]
+         ........  ........
+    #09  f2f0a8e0  00000001
+         f2f0a8e4  f3303f00  [anon:libc_malloc]
+         f2f0a8e8  00000000
+         f2f0a8ec  f3303f00  [anon:libc_malloc]
+         f2f0a8f0  00000000
+         f2f0a8f4  f3303f60  [anon:libc_malloc]
+         f2f0a8f8  00000000
+         f2f0a8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #10  f2f0a900  f2f0a970
+         f2f0a904  00000000
+         f2f0a908  f330f060  [anon:libc_malloc]
+         f2f0a90c  00000000
+         f2f0a910  f2f0a970
+         f2f0a914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #11  f2f0a918  f330f060  [anon:libc_malloc]
+         f2f0a91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #12  f2f0a920  f330f060  [anon:libc_malloc]
+         f2f0a924  f3618fb0  [anon:libc_malloc]
+         f2f0a928  f330f060  [anon:libc_malloc]
+         f2f0a92c  f3618fa0  [anon:libc_malloc]
+         f2f0a930  f330f060  [anon:libc_malloc]
+         f2f0a934  5c88098c
+         f2f0a938  f2f0a970
+         f2f0a93c  f2f0a970
+         f2f0a940  f2f0a970
+         f2f0a944  00000078
+         f2f0a948  00000330
+         f2f0a94c  f3618fc0  [anon:libc_malloc]
+         f2f0a950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2f0a954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #13  f2f0a958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2f0a95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #14  f2f0a960  f2f0a978
+         f2f0a964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2f0a968  f2f0a970
+         f2f0a96c  00000000
+         f2f0a970  f3007970
+         f2f0a974  f2e0d970
+         f2f0a978  0000267d
+         f2f0a97c  00000330
+         f2f0a980  00000001
+         f2f0a984  f2e0e000  [anon:thread stack guard page]
+         f2f0a988  000fc970
+         f2f0a98c  00001000
+         f2f0a990  00000000
+         f2f0a994  00000000
+         f2f0a998  00000003
+         f2f0a99c  00000000
+
+memory near r1:
+    0000265c -------- -------- -------- --------  ................
+    0000266c -------- -------- -------- --------  ................
+    0000267c -------- -------- -------- --------  ................
+    0000268c -------- -------- -------- --------  ................
+    0000269c -------- -------- -------- --------  ................
+    000026ac -------- -------- -------- --------  ................
+    000026bc -------- -------- -------- --------  ................
+    000026cc -------- -------- -------- --------  ................
+    000026dc -------- -------- -------- --------  ................
+    000026ec -------- -------- -------- --------  ................
+    000026fc -------- -------- -------- --------  ................
+    0000270c -------- -------- -------- --------  ................
+    0000271c -------- -------- -------- --------  ................
+    0000272c -------- -------- -------- --------  ................
+    0000273c -------- -------- -------- --------  ................
+    0000274c -------- -------- -------- --------  ................
+
+memory near r5:
+    0000265c -------- -------- -------- --------  ................
+    0000266c -------- -------- -------- --------  ................
+    0000267c -------- -------- -------- --------  ................
+    0000268c -------- -------- -------- --------  ................
+    0000269c -------- -------- -------- --------  ................
+    000026ac -------- -------- -------- --------  ................
+    000026bc -------- -------- -------- --------  ................
+    000026cc -------- -------- -------- --------  ................
+    000026dc -------- -------- -------- --------  ................
+    000026ec -------- -------- -------- --------  ................
+    000026fc -------- -------- -------- --------  ................
+    0000270c -------- -------- -------- --------  ................
+    0000271c -------- -------- -------- --------  ................
+    0000272c -------- -------- -------- --------  ................
+    0000273c -------- -------- -------- --------  ................
+    0000274c -------- -------- -------- --------  ................
+
+memory near r6:
+    f2f0a648 00000330 5c88098c 00000330 f38bc4dd  0......\0.......
+    f2f0a658 f40dc030 f2f0a690 f3630760 00000061  0.......`.c.a...
+    f2f0a668 ffffffdf f2f0a6e0 f2f0a690 f3630760  ............`.c.
+    f2f0a678 00000061 f40d4563 00000061 f40d4e37  a...cE..a...7N..
+    f2f0a688 f3630760 f36192d0 00000061 00000055  `.c...a.a...U...
+    f2f0a698 f3630760 f3630760 5c88098c f2f0a704  `.c.`.c....\....
+    f2f0a6a8 f2f0a9c8 f364ac80 f2f0a6d4 00000000  ......d.........
+    f2f0a6b8 f3623f40 f3f8e109 f2f0a808 f3c667bf  @?b..........g..
+    f2f0a6c8 00000006 ffffffff f330c6e0 00000031  ..........0.1...
+    f2f0a6d8 0000002e f330f3c0 f364ac80 5c88098c  ......0...d....\
+    f2f0a6e8 f3623f40 f3623f7c f2f0a704 00000004  @?b.|?b.........
+    f2f0a6f8 f2f0a928 f3f2166d 00000000 ffffff7f  (...m...........
+    f2f0a708 ffffffe0 00000000 00000000 00000000  ................
+    f2f0a718 5c880901 5c88098c f2f0a808 f3623f44  ...\...\....D?b.
+    f2f0a728 f2f0a83c f3f1d711 5c88098c f3303f00  <..........\.?0.
+    f2f0a738 f3303f00 f3303f2c 00000000 f4250fc9  .?0.,?0.......%.
+
+memory near r9:
+    f3623f20 f330d220 00000021 00000012 f330d2a0   .0.!.........0.
+    f3623f30 f3308324 f3308324 f3f978d4 00000000  $.0.$.0..x......
+    f3623f40 f3f30d14 f3f30dbc 00000000 00000000  ................
+    f3623f50 f3f30e0c f3f30e24 f330c6b0 00000000  ....$.....0.....
+    f3623f60 00000000 00000000 f3f314f0 f330de50  ............P.0.
+    f3623f70 00000002 00000000 00000004 f362f620  ............ .b.
+    f3623f80 00000000 f3f30e80 f330c6e0 00000000  ..........0.....
+    f3623f90 f3f30d14 f3f3127c 00000000 00000000  ....|...........
+    f3623fa0 f3f30e0c f3f30e24 f36681a0 00000000  ....$.....f.....
+    f3623fb0 0000ffff 0000ffff f3f97954 00000000  ........Ty......
+    f3623fc0 00000000 00000000 00000004 00000000  ................
+    f3623fd0 ffffffed f3f978d4 00000000 00000000  .....x..........
+    f3623fe0 f3f30d14 f3f3127c 00000000 00000000  ....|...........
+    f3623ff0 f3f30e0c f3f30e24 f3668810 00000000  ....$.....f.....
+    f3624000 0000ffff 0000ffff f3f97954 00000000  ........Ty......
+    f3624010 00000000 00000000 00000004 f362ff20  ............ .b.
+
+memory near sl:
+    f3f8e0e8 b00bbf04 83f0e8bd e9d0f7fc 00009dee  ................
+    f3f8e0f8 00000087 00007806 00007815 00009d40  .....x...x..@...
+    f3f8e108 b081b5f0 7400e9d0 e9d02800 d0016502  .......t.(...e..
+    f3f8e118 e9b6f7fc 21002000 f7fc4632 2e0aeaa2  ..... .!2F......
+    f3f8e128 2101bfb4 20002100 eaa0f7fc 4628b12d  ...!.!. ....-.(F
+    f3f8e138 ff4af7ff f7fc4628 4620e9b6 b0014639  ..J.(F.... F9F..
+    f3f8e148 40f0e8bd f0064708 0000bcfd b082b580  ...@.G..........
+    f3f8e158 23004a07 f8d2447a 2200c000 2200e9cd  .J.#zD....."..."
+    f3f8e168 447a4a04 280047e0 2001bf18 bd80b002  .JzD.G.(... ....
+    f3f8e178 00009eac 000077c1 b082b580 447b4b07  .....w.......K{D
+    f3f8e188 c000f8d3 e9cd2300 23003200 447a4a04  .....#...2.#.JzD
+    f3f8e198 280047e0 2001bf18 bd80b002 00009e82  .G.(... ........
+    f3f8e1a8 00007795 c008f8df f8dc44fc 4760c000  .w.......D....`G
+    f3f8e1b8 00009e58 44794901 47706008 00009e4a  X....IyD.`pGJ...
+    f3f8e1c8 b081b5f0 4605460c dd012c09 e0082100  .....F.F.,...!..
+    f3f8e1d8 46292000 f7fc2600 2700ea56 db0b280a  . )F.&..V..'.(..
+
+memory near fp:
+    f2f0a7e8 00000000 f4242de5 f3303f98 f424ac8d  .....-$..?0...$.
+    f2f0a7f8 00000010 f424b701 f3303f00 f366a000  ......$..?0...f.
+    f2f0a808 00000000 00000000 00000000 00000000  ................
+    f2f0a818 00000000 00000000 00000000 00000000  ................
+    f2f0a828 00000000 01000100 00000000 f36307b4  ..............c.
+    f2f0a838 00000000 00000000 f34d0068 0000002c  ........h.M.,...
+    f2f0a848 0000002c 0000002c f34d0098 00000000  ,...,.....M.....
+    f2f0a858 00000000 00000000 01000100 f424b701  ..............$.
+    f2f0a868 f3303f00 00000000 f330c6e0 00000000  .?0.......0.....
+    f2f0a878 f3623f44 00000000 00000004 00000010  D?b.............
+    f2f0a888 00001483 00002790 0000002c 00000000  .....'..,.......
+    f2f0a898 00000000 00000000 f34d0068 00000000  ........h.M.....
+    f2f0a8a8 f34d0098 00000000 00000000 5c88098c  ..M............\
+    f2f0a8b8 00000000 00000000 00000000 00000000  ................
+    f2f0a8c8 f3303f00 f3303f00 80407202 f3303f2c  .?0..?0..r@.,?0.
+    f2f0a8d8 00000000 f424a94d 00000001 f3303f00  ....M.$......?0.
+
+memory near sp:
+    f2f0a638 00000000 00000000 ffffffdf 00000000  ................
+    f2f0a648 00000330 5c88098c 00000330 f38bc4dd  0......\0.......
+    f2f0a658 f40dc030 f2f0a690 f3630760 00000061  0.......`.c.a...
+    f2f0a668 ffffffdf f2f0a6e0 f2f0a690 f3630760  ............`.c.
+    f2f0a678 00000061 f40d4563 00000061 f40d4e37  a...cE..a...7N..
+    f2f0a688 f3630760 f36192d0 00000061 00000055  `.c...a.a...U...
+    f2f0a698 f3630760 f3630760 5c88098c f2f0a704  `.c.`.c....\....
+    f2f0a6a8 f2f0a9c8 f364ac80 f2f0a6d4 00000000  ......d.........
+    f2f0a6b8 f3623f40 f3f8e109 f2f0a808 f3c667bf  @?b..........g..
+    f2f0a6c8 00000006 ffffffff f330c6e0 00000031  ..........0.1...
+    f2f0a6d8 0000002e f330f3c0 f364ac80 5c88098c  ......0...d....\
+    f2f0a6e8 f3623f40 f3623f7c f2f0a704 00000004  @?b.|?b.........
+    f2f0a6f8 f2f0a928 f3f2166d 00000000 ffffff7f  (...m...........
+    f2f0a708 ffffffe0 00000000 00000000 00000000  ................
+    f2f0a718 5c880901 5c88098c f2f0a808 f3623f44  ...\...\....D?b.
+    f2f0a728 f2f0a83c f3f1d711 5c88098c f3303f00  <..........\.?0.
+
+code around pc:
+    f38ed95c e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38ed96c ea00c5c7 e1a0c007 e3a07f43 ef000000  ........C.......
+    f38ed97c e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38ed98c ea00c5bf e1a0c007 e300715e ef000000  ........^q......
+    f38ed99c e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38ed9ac ea00c5b7 e1a0c007 e3007162 ef000000  ........bq......
+    f38ed9bc e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38ed9cc ea00c5af e1a0c007 e3007161 ef000000  ........aq......
+    f38ed9dc e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38ed9ec ea00c5a7 e1a0c007 e3a0702b ef000000  ........+p......
+    f38ed9fc e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38eda0c ea00c59f e1a0c007 e3a0705c ef000000  ........\p......
+    f38eda1c e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38eda2c ea00c597 e1a0c007 e3a070c1 ef000000  .........p......
+    f38eda3c e1a0700c e3700a01 912fff1e e2600000  .p....p.../...`.
+    f38eda4c ea00c58f e1a0c007 e3a0703c ef000000  ........<p......
+
+code around lr:
+    f38bc4c4 e9d4f7fb 21064630 e9d6f7fb 46312002  ....0F.!..... 1F
+    f38bc4d4 27002200 e9bef7fb 46294620 f7fb2206  .".'.... F)F."..
+    f38bc4e4 9700e9d2 5080f04f 9002466f f7fb1d38  ....O..PoF..8...
+    f38bc4f4 2006e9d0 463a4639 e9d0f7fb 46312002  ... 9F:F..... 1F
+    f38bc504 f7fb2200 4620e9a8 22064629 e9baf7fb  .".... F)F."....
+    f38bc514 f7fb207f 2300e9ca bdd0f062 c008f8df  . .....#b.......
+    f38bc524 f8dc44fc 4760c000 00076c38 4601460a  .D....`G8l...F.F
+    f38bc534 0063f06f f0622300 0000bdc9 b082b580  o.c..#b.........
+    f38bc544 4479490c 68096809 46699101 e9bef7fb  .IyD.h.h..iF....
+    f38bc554 48092800 44789900 bf086800 31fff04f  .(.H..xD.h..O..1
+    f38bc564 68009a01 bf021a80 b002ba08 f7fabd80  ...h............
+    f38bc574 bf00ee9c 00075e76 00075e62 b082b580  ....v^..b^......
+    f38bc584 4479490c 68096809 46699101 e99ef7fb  .IyD.h.h..iF....
+    f38bc594 98004601 49082900 f04fbf08 9a0130ff  .F...).I..O..0..
+    f38bc5a4 68094479 1a896809 b002bf04 f7fabd80  yD.h.h..........
+    f38bc5b4 bf00ee7c 00075e36 00075e18 4ff0e92d  |...6^...^..-..O
+
+memory map:
+    adf53000-adf5afff r-x         0      8000  /system/bin/mediadrmserver (BuildId: 6413c2d21b362107c1e2fdd333157bf1)
+    adf5b000-adf5cfff r--      7000      2000  /system/bin/mediadrmserver
+    adf5d000-adf5dfff rw-         0      1000
+    f2403000-f2403fff ---         0      1000  [anon:thread stack guard page]
+    f2404000-f24fffff rw-         0     fc000
+    f2500000-f257ffff rw-         0     80000  [anon:libc_malloc]
+    f2592000-f2592fff ---         0      1000  [anon:thread stack guard page]
+    f2593000-f268efff rw-         0     fc000
+    f268f000-f268ffff ---         0      1000  [anon:thread stack guard page]
+    f2690000-f278bfff rw-         0     fc000
+    f278c000-f278cfff ---         0      1000  [anon:thread stack guard page]
+    f278d000-f2888fff rw-         0     fc000
+    f2889000-f2889fff ---         0      1000  [anon:thread stack guard page]
+    f288a000-f2985fff rw-         0     fc000
+    f2986000-f2986fff ---         0      1000  [anon:thread stack guard page]
+    f2987000-f2a82fff rw-         0     fc000
+    f2a83000-f2a83fff ---         0      1000  [anon:thread stack guard page]
+    f2a84000-f2b7ffff rw-         0     fc000
+    f2b80000-f2bfffff rw-         0     80000  [anon:libc_malloc]
+    f2c14000-f2c14fff ---         0      1000  [anon:thread stack guard page]
+    f2c15000-f2d10fff rw-         0     fc000
+    f2d11000-f2d11fff ---         0      1000  [anon:thread stack guard page]
+    f2d12000-f2e0dfff rw-         0     fc000
+    f2e0e000-f2e0efff ---         0      1000  [anon:thread stack guard page]
+    f2e0f000-f2f0afff rw-         0     fc000
+    f2f0b000-f2f0bfff ---         0      1000  [anon:thread stack guard page]
+    f2f0c000-f3007fff rw-         0     fc000
+    f3008000-f3008fff ---         0      1000  [anon:thread stack guard page]
+    f3009000-f3104fff rw-         0     fc000
+    f3105000-f3105fff ---         0      1000  [anon:thread stack guard page]
+    f3106000-f3201fff rw-         0     fc000
+    f3202000-f32fffff r--         0     fe000  /dev/hwbinder
+    f3300000-f337ffff rw-         0     80000  [anon:libc_malloc]
+    f33d3000-f33d3fff ---         0      1000  [anon:thread stack guard page]
+    f33d4000-f34cffff rw-         0     fc000
+    f34d0000-f35cdfff r--         0     fe000  /dev/binder
+    f35ce000-f35d1fff r-x         0      4000  /system/lib/libnetd_client.so (BuildId: 5d8ba76356fbfbeb2014ea015d93935d)
+    f35d2000-f35d2fff r--      3000      1000  /system/lib/libnetd_client.so
+    f35d3000-f35d3fff rw-      4000      1000  /system/lib/libnetd_client.so
+    f3600000-f36fffff rw-         0    100000  [anon:libc_malloc]
+    f375b000-f3770fff r-x         0     16000  /system/lib/liblzma.so (BuildId: 8d14166c1001d875221c81ef1eb9a39d)
+    f3771000-f3771fff r--     15000      1000  /system/lib/liblzma.so
+    f3772000-f3772fff rw-     16000      1000  /system/lib/liblzma.so
+    f3773000-f3777fff rw-         0      5000  [anon:.bss]
+    f379a000-f37abfff r-x         0     12000  /system/lib/liblog.so (BuildId: 00088627f235b2c8d5ea0c449ce614b9)
+    f37ac000-f37acfff r--     11000      1000  /system/lib/liblog.so
+    f37ad000-f37adfff rw-     12000      1000  /system/lib/liblog.so
+    f37d7000-f37ebfff r-x         0     15000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: f019118b87b157dfdeb19521911309ed)
+    f37ec000-f37edfff r--     14000      2000  /system/lib/android.hardware.graphics.allocator@2.0.so
+    f37ee000-f37eefff rw-     16000      1000  /system/lib/android.hardware.graphics.allocator@2.0.so
+    f3802000-f381cfff r-x         0     1b000  /system/lib/libhwbinder.so (BuildId: 3041c666bcca7c49f26de5afee6f33da)
+    f381d000-f381efff r--     1a000      2000  /system/lib/libhwbinder.so
+    f381f000-f381ffff rw-     1c000      1000  /system/lib/libhwbinder.so
+    f3857000-f3864fff r-x         0      e000  /system/lib/libbacktrace.so (BuildId: a00feca6f2ca3c4532935234a6a1f304)
+    f3865000-f3865fff r--      d000      1000  /system/lib/libbacktrace.so
+    f3866000-f3866fff rw-      e000      1000  /system/lib/libbacktrace.so
+    f38a2000-f392efff r-x         0     8d000  /system/lib/libc.so (BuildId: 2f8a354a07081d576ca7206dd034c4e0)
+    f392f000-f3932fff r--     8c000      4000  /system/lib/libc.so
+    f3933000-f3934fff rw-     90000      2000  /system/lib/libc.so
+    f3935000-f3935fff rw-         0      1000  [anon:.bss]
+    f3936000-f3936fff r--         0      1000  [anon:.bss]
+    f3937000-f393cfff rw-         0      6000  [anon:.bss]
+    f394b000-f3962fff r-x         0     18000  /system/lib/libmemunreachable.so (BuildId: ad35144e19f65c0b1d55525a0ba5838d)
+    f3963000-f3963fff r--     17000      1000  /system/lib/libmemunreachable.so
+    f3964000-f3964fff rw-     18000      1000  /system/lib/libmemunreachable.so
+    f399b000-f399ffff r-x         0      5000  /system/lib/libnativeloader.so (BuildId: dca090053b242d3a4916c99e66c467f4)
+    f39a0000-f39a0fff r--      4000      1000  /system/lib/libnativeloader.so
+    f39a1000-f39a1fff rw-      5000      1000  /system/lib/libnativeloader.so
+    f39db000-f39f2fff r-x         0     18000  /system/lib/libui.so (BuildId: 61c7cb34bb7f3322764d9dd322ca0df2)
+    f39f3000-f39f3fff ---         0      1000
+    f39f4000-f39f4fff r--     18000      1000  /system/lib/libui.so
+    f39f5000-f39f5fff rw-     19000      1000  /system/lib/libui.so
+    f3a2a000-f3a74fff r-x         0     4b000  /system/lib/android.hardware.drm@1.0.so (BuildId: 3a85fc594f34408b006cff9eb81c2759) (load base 0x4000)
+    f3a75000-f3a75fff ---         0      1000
+    f3a76000-f3a7afff r--     4b000      5000  /system/lib/android.hardware.drm@1.0.so
+    f3a7b000-f3a7bfff rw-     50000      1000  /system/lib/android.hardware.drm@1.0.so
+    f3ab5000-f3ab8fff r-x         0      4000  /system/lib/libnativebridge.so (BuildId: ff57553e15ba719fec145c56a6e9715a)
+    f3ab9000-f3ab9fff r--      3000      1000  /system/lib/libnativebridge.so
+    f3aba000-f3abafff rw-      4000      1000  /system/lib/libnativebridge.so
+    f3ad5000-f3ad7fff r-x         0      3000  /system/lib/libion.so (BuildId: 9fec1ecff27bd5f48ee88b98024f6212)
+    f3ad8000-f3ad8fff r--      2000      1000  /system/lib/libion.so
+    f3ad9000-f3ad9fff rw-      3000      1000  /system/lib/libion.so
+    f3b02000-f3b0dfff r-x         0      c000  /system/lib/libmediautils.so (BuildId: 5e2d4cef22503f91fe6f3dc1afbdc605)
+    f3b0e000-f3b0ffff r--      b000      2000  /system/lib/libmediautils.so
+    f3b10000-f3b10fff rw-      d000      1000  /system/lib/libmediautils.so
+    f3b51000-f3b62fff r-x         0     12000  /system/lib/android.hidl.base@1.0.so (BuildId: ba44ae1feec108b0b9f419985a3b5d26)
+    f3b63000-f3b64fff r--     11000      2000  /system/lib/android.hidl.base@1.0.so
+    f3b65000-f3b65fff rw-     13000      1000  /system/lib/android.hidl.base@1.0.so
+    f3b9f000-f3ba1fff r-x         0      3000  /system/lib/android.hardware.configstore-utils.so (BuildId: b79f67013502f3b5bd45c778e9923f4a)
+    f3ba2000-f3ba2fff r--      2000      1000  /system/lib/android.hardware.configstore-utils.so
+    f3ba3000-f3ba3fff rw-      3000      1000  /system/lib/android.hardware.configstore-utils.so
+    f3bed000-f3bf5fff r-x         0      9000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: a747ab07e38dcaba85b2d1e32dd3332f)
+    f3bf6000-f3bf6fff r--      8000      1000  /system/lib/android.hardware.graphics.common@1.0.so
+    f3bf7000-f3bf7fff rw-      9000      1000  /system/lib/android.hardware.graphics.common@1.0.so
+    f3c07000-f3c15fff r-x         0      f000  /system/lib/libcutils.so (BuildId: cd6a04e7e4de8a62d16951485634eb9f)
+    f3c16000-f3c18fff r--      e000      3000  /system/lib/libcutils.so
+    f3c19000-f3c19fff rw-     11000      1000  /system/lib/libcutils.so
+    f3c60000-f3c6afff r-x         0      b000  /system/lib/libhidlbase.so (BuildId: 9992b562cbc2a4e77e21c22627f3db5d)
+    f3c6b000-f3c6bfff r--      a000      1000  /system/lib/libhidlbase.so
+    f3c6c000-f3c6cfff rw-      b000      1000  /system/lib/libhidlbase.so
+    f3c88000-f3ca4fff r-x         0     1d000  /system/lib/android.hidl.memory@1.0.so (BuildId: 89f42fb892ed68d8863487777b2de34c) (load base 0x1000)
+    f3ca5000-f3ca5fff ---         0      1000
+    f3ca6000-f3ca7fff r--     1d000      2000  /system/lib/android.hidl.memory@1.0.so
+    f3ca8000-f3ca8fff rw-     1f000      1000  /system/lib/android.hidl.memory@1.0.so
+    f3ce1000-f3ce6fff r-x         0      6000  /system/lib/libnativehelper.so (BuildId: f4da2aa8391e4eb05ea03abe7dea1503)
+    f3ce7000-f3ce7fff r--      5000      1000  /system/lib/libnativehelper.so
+    f3ce8000-f3ce8fff rw-      6000      1000  /system/lib/libnativehelper.so
+    f3d14000-f3d33fff r-x         0     20000  /system/lib/libm.so (BuildId: 84b734f835194752f6b1f9258e1038ae)
+    f3d34000-f3d34fff r--     1f000      1000  /system/lib/libm.so
+    f3d35000-f3d35fff rw-     20000      1000  /system/lib/libm.so
+    f3d78000-f3d7cfff r-x         0      5000  /system/lib/libhidlmemory.so (BuildId: b0ef51377afe25b40868b2a85de9cd65)
+    f3d7d000-f3d7dfff r--      4000      1000  /system/lib/libhidlmemory.so
+    f3d7e000-f3d7efff rw-      5000      1000  /system/lib/libhidlmemory.so
+    f3d9e000-f3da0fff r-x         0      3000  /system/lib/libsync.so (BuildId: b7f470d94d6acaf19fee061784b5f0d7)
+    f3da1000-f3da1fff r--      2000      1000  /system/lib/libsync.so
+    f3da2000-f3da2fff rw-      3000      1000  /system/lib/libsync.so
+    f3dee000-f3df2fff r-x         0      5000  /system/lib/libpowermanager.so (BuildId: 4d94ef714b1d280bdf889a0ffd1faa1b)
+    f3df3000-f3df3fff r--      4000      1000  /system/lib/libpowermanager.so
+    f3df4000-f3df4fff rw-      5000      1000  /system/lib/libpowermanager.so
+    f3e19000-f3e1bfff r-x         0      3000  /system/lib/libhardware.so (BuildId: ea96536c201be49c367124e3723edfd6)
+    f3e1c000-f3e1cfff r--      2000      1000  /system/lib/libhardware.so
+    f3e1d000-f3e1dfff rw-      3000      1000  /system/lib/libhardware.so
+    f3e68000-f3ef1fff r-x         0     8a000  /system/lib/libc++.so (BuildId: 73af003eb12d928eb546a2187306c45b) (load base 0x2000)
+    f3ef2000-f3ef2fff ---         0      1000
+    f3ef3000-f3ef6fff r--     8a000      4000  /system/lib/libc++.so
+    f3ef7000-f3ef7fff rw-     8e000      1000  /system/lib/libc++.so
+    f3ef8000-f3ef8fff rw-         0      1000  [anon:.bss]
+    f3f03000-f3f2bfff r-x         0     29000  /system/lib/libmediadrm.so (BuildId: cffccd5e8c7c841a7529a3e32c579485) (load base 0x7000)
+    f3f2c000-f3f34fff r--     28000      9000  /system/lib/libmediadrm.so
+    f3f35000-f3f35fff rw-     31000      1000  /system/lib/libmediadrm.so
+    f3f41000-f3f5afff r-x         0     1a000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 90736ac97fe47f76c2387d285af577d4) (load base 0x1000)
+    f3f5b000-f3f5cfff r--     19000      2000  /system/lib/android.hardware.configstore@1.0.so
+    f3f5d000-f3f5dfff rw-     1b000      1000  /system/lib/android.hardware.configstore@1.0.so
+    f3f81000-f3f95fff r-x         0     15000  /system/lib/libutils.so (BuildId: 8a9d7ab526287de94aec318592ac880b)
+    f3f96000-f3f96fff ---         0      1000
+    f3f97000-f3f97fff r--     15000      1000  /system/lib/libutils.so
+    f3f98000-f3f98fff rw-     16000      1000  /system/lib/libutils.so
+    f3ff2000-f3ff4fff r-x         0      3000  /system/lib/libdl.so (BuildId: 0997181b84886de5842c17ae5d213ad9)
+    f3ff5000-f3ff5fff r--      2000      1000  /system/lib/libdl.so
+    f3ff6000-f3ff6fff rw-      3000      1000  /system/lib/libdl.so
+    f3ff7000-f3ff7fff rw-         0      1000  [anon:.bss]
+    f401b000-f402efff r-x         0     14000  /system/lib/libunwind.so (BuildId: becea31623b0d9247c528cc532abd1eb)
+    f402f000-f402ffff ---         0      1000
+    f4030000-f4030fff r--     14000      1000  /system/lib/libunwind.so
+    f4031000-f4031fff rw-     15000      1000  /system/lib/libunwind.so
+    f4032000-f4077fff rw-         0     46000  [anon:.bss]
+    f4080000-f4082fff r-x         0      3000  /system/lib/libvndksupport.so (BuildId: 2a56878a4b7a579bfa975e927c886b85)
+    f4083000-f4083fff r--      2000      1000  /system/lib/libvndksupport.so
+    f4084000-f4084fff rw-      3000      1000  /system/lib/libvndksupport.so
+    f40cd000-f40dafff r-x         0      e000  /system/lib/libbase.so (BuildId: 896fcd85898c4e5d92bc57b65afcff57)
+    f40db000-f40dbfff r--      d000      1000  /system/lib/libbase.so
+    f40dc000-f40dcfff rw-      e000      1000  /system/lib/libbase.so
+    f4116000-f4136fff r-x         0     21000  /system/lib/libstagefright_foundation.so (BuildId: c5f0d07778c854ef8a975ed9de1ac518)
+    f4137000-f4137fff ---         0      1000
+    f4138000-f4138fff r--     21000      1000  /system/lib/libstagefright_foundation.so
+    f4139000-f4139fff rw-     22000      1000  /system/lib/libstagefright_foundation.so
+    f4144000-f415cfff r-x         0     19000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: c36bd78bcf1e31f6105e0d68a7ecb4a0)
+    f415d000-f415efff r--     18000      2000  /system/lib/android.hardware.graphics.mapper@2.0.so
+    f415f000-f415ffff rw-     1a000      1000  /system/lib/android.hardware.graphics.mapper@2.0.so
+    f4184000-f41c1fff r-x         0     3e000  /system/lib/libhidltransport.so (BuildId: 3fb5ec3f4ecf449e4111f14620c7c136) (load base 0x2000)
+    f41c2000-f41c5fff r--     3d000      4000  /system/lib/libhidltransport.so
+    f41c6000-f41c6fff rw-     41000      1000  /system/lib/libhidltransport.so
+    f4209000-f426bfff r-x         0     63000  /system/lib/libbinder.so (BuildId: d32157600f1f6c2cb4b9ea48bb6f5acf) (load base 0x7000)
+    f426c000-f4276fff r--     62000      b000  /system/lib/libbinder.so
+    f4277000-f4277fff rw-     6d000      1000  /system/lib/libbinder.so
+    f4280000-f4282fff r-x         0      3000  /system/lib/libstagefright_hwextendedmediadrm.so (BuildId: 056bdb69e6f5dd92c0a1b196e32e3247)
+    f4283000-f4283fff r--      2000      1000  /system/lib/libstagefright_hwextendedmediadrm.so
+    f4284000-f4284fff rw-      3000      1000  /system/lib/libstagefright_hwextendedmediadrm.so
+    f42c3000-f42cefff r-x         0      c000  /system/lib/libc_secshared.so (BuildId: 02739cfc6a3adff890e5bbe4f1276e96)
+    f42cf000-f42cffff r--      b000      1000  /system/lib/libc_secshared.so
+    f42d0000-f42d0fff rw-      c000      1000  /system/lib/libc_secshared.so
+    f42d4000-f42f3fff r--         0     20000  /dev/__properties__/u:object_r:logd_prop:s0
+    f42f4000-f4313fff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    f4314000-f4314fff rw-         0      1000  [anon:linker_alloc]
+    f4323000-f4323fff r--         0      1000  [anon:linker_alloc]
+    f4332000-f4332fff r--         0      1000  [anon:linker_alloc]
+    f434d000-f434dfff rw-         0      1000  [anon:linker_alloc]
+    f436d000-f436dfff ---         0      1000  [anon:thread signal stack guard page]
+    f436e000-f4371fff rw-         0      4000  [anon:thread signal stack]
+    f4372000-f4372fff ---         0      1000  [anon:bionic TLS guard page]
+    f4373000-f4375fff rw-         0      3000  [anon:bionic TLS]
+    f4376000-f4376fff ---         0      1000  [anon:bionic TLS guard page]
+    f4377000-f4377fff ---         0      1000  [anon:thread signal stack guard page]
+    f4378000-f437bfff rw-         0      4000  [anon:thread signal stack]
+    f437c000-f437cfff ---         0      1000  [anon:bionic TLS guard page]
+    f437d000-f437ffff rw-         0      3000  [anon:bionic TLS]
+    f4380000-f4380fff ---         0      1000  [anon:bionic TLS guard page]
+    f4381000-f4381fff r--         0      1000  [anon:linker_alloc]
+    f4383000-f4383fff ---         0      1000  [anon:thread signal stack guard page]
+    f4384000-f4387fff rw-         0      4000  [anon:thread signal stack]
+    f4388000-f4388fff rw-         0      1000  [anon:linker_alloc_vector]
+    f438d000-f438dfff ---         0      1000  [anon:bionic TLS guard page]
+    f438e000-f4390fff rw-         0      3000  [anon:bionic TLS]
+    f4391000-f4391fff ---         0      1000  [anon:bionic TLS guard page]
+    f4392000-f4392fff ---         0      1000  [anon:thread signal stack guard page]
+    f4393000-f4396fff rw-         0      4000  [anon:thread signal stack]
+    f4397000-f4397fff rw-         0      1000  [anon:linker_alloc]
+    f439c000-f439cfff ---         0      1000  [anon:bionic TLS guard page]
+    f439d000-f439ffff rw-         0      3000  [anon:bionic TLS]
+    f43a0000-f43a0fff ---         0      1000  [anon:bionic TLS guard page]
+    f43a1000-f43a1fff ---         0      1000  [anon:thread signal stack guard page]
+    f43a2000-f43a5fff rw-         0      4000  [anon:thread signal stack]
+    f43a6000-f43a6fff r--         0      1000  [anon:linker_alloc]
+    f43a9000-f43a9fff rw-         0      1000
+    f43aa000-f43aafff ---         0      1000  [anon:bionic TLS guard page]
+    f43ab000-f43adfff rw-         0      3000  [anon:bionic TLS]
+    f43ae000-f43aefff ---         0      1000  [anon:bionic TLS guard page]
+    f43af000-f43affff ---         0      1000  [anon:thread signal stack guard page]
+    f43b0000-f43b3fff rw-         0      4000  [anon:thread signal stack]
+    f43b4000-f43b4fff ---         0      1000  [anon:bionic TLS guard page]
+    f43b5000-f43b7fff rw-         0      3000  [anon:bionic TLS]
+    f43b8000-f43b8fff ---         0      1000  [anon:bionic TLS guard page]
+    f43b9000-f43b9fff ---         0      1000  [anon:thread signal stack guard page]
+    f43ba000-f43bdfff rw-         0      4000  [anon:thread signal stack]
+    f43be000-f43ddfff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    f43de000-f43defff r--         0      1000  [anon:linker_alloc]
+    f43df000-f43dffff rw-         0      1000  [anon:linker_alloc_vector]
+    f43e0000-f43e0fff ---         0      1000  [anon:bionic TLS guard page]
+    f43e1000-f43e3fff rw-         0      3000  [anon:bionic TLS]
+    f43e4000-f43e4fff ---         0      1000  [anon:bionic TLS guard page]
+    f43e5000-f43e5fff ---         0      1000  [anon:thread signal stack guard page]
+    f43e6000-f43e9fff rw-         0      4000  [anon:thread signal stack]
+    f43ea000-f43eafff ---         0      1000  [anon:bionic TLS guard page]
+    f43eb000-f43edfff rw-         0      3000  [anon:bionic TLS]
+    f43ee000-f43eefff ---         0      1000  [anon:bionic TLS guard page]
+    f43ef000-f43effff ---         0      1000  [anon:thread signal stack guard page]
+    f43f0000-f43f3fff rw-         0      4000  [anon:thread signal stack]
+    f43f4000-f43f4fff ---         0      1000  [anon:bionic TLS guard page]
+    f43f5000-f43f7fff rw-         0      3000  [anon:bionic TLS]
+    f43f8000-f43f8fff ---         0      1000  [anon:bionic TLS guard page]
+    f43f9000-f4418fff r--         0     20000  /dev/__properties__/u:object_r:hwservicemanager_prop:s0
+    f4419000-f4419fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    f441a000-f441afff ---         0      1000  [anon:thread signal stack guard page]
+    f441b000-f441efff rw-         0      4000  [anon:thread signal stack]
+    f441f000-f441ffff ---         0      1000  [anon:bionic TLS guard page]
+    f4420000-f4422fff rw-         0      3000  [anon:bionic TLS]
+    f4423000-f4423fff ---         0      1000  [anon:bionic TLS guard page]
+    f4424000-f4424fff ---         0      1000  [anon:thread signal stack guard page]
+    f4425000-f4428fff rw-         0      4000  [anon:thread signal stack]
+    f4429000-f4429fff ---         0      1000  [anon:bionic TLS guard page]
+    f442a000-f442cfff rw-         0      3000  [anon:bionic TLS]
+    f442d000-f442dfff ---         0      1000  [anon:bionic TLS guard page]
+    f442e000-f444dfff r--         0     20000  /dev/__properties__/u:object_r:log_tag_prop:s0
+    f444e000-f444efff r--         0      1000  [anon:linker_alloc]
+    f444f000-f444ffff rw-         0      1000  [anon:linker_alloc]
+    f4450000-f4450fff ---         0      1000  [anon:thread signal stack guard page]
+    f4451000-f4454fff rw-         0      4000  [anon:thread signal stack]
+    f4455000-f4455fff ---         0      1000  [anon:bionic TLS guard page]
+    f4456000-f4458fff rw-         0      3000  [anon:bionic TLS]
+    f4459000-f4459fff ---         0      1000  [anon:bionic TLS guard page]
+    f445a000-f445afff ---         0      1000  [anon:thread signal stack guard page]
+    f445b000-f445efff rw-         0      4000  [anon:thread signal stack]
+    f445f000-f445ffff ---         0      1000  [anon:bionic TLS guard page]
+    f4460000-f4462fff rw-         0      3000  [anon:bionic TLS]
+    f4463000-f4463fff ---         0      1000  [anon:bionic TLS guard page]
+    f4464000-f4464fff ---         0      1000  [anon:thread signal stack guard page]
+    f4465000-f4468fff rw-         0      4000  [anon:thread signal stack]
+    f4469000-f4469fff ---         0      1000  [anon:bionic TLS guard page]
+    f446a000-f446cfff rw-         0      3000  [anon:bionic TLS]
+    f446d000-f446dfff ---         0      1000  [anon:bionic TLS guard page]
+    f446e000-f448dfff r--         0     20000  /dev/__properties__/u:object_r:logd_prop:s0
+    f448e000-f448efff r--         0      1000  [anon:atexit handlers]
+    f448f000-f44aefff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    f44af000-f44cefff r--         0     20000  /dev/__properties__/properties_serial
+    f44cf000-f44d0fff rw-         0      2000  [anon:linker_alloc_vector]
+    f44d1000-f44d1fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    f44d2000-f44d2fff rw-         0      1000  [anon:linker_alloc_vector]
+    f44d3000-f44d4fff rw-         0      2000  [anon:linker_alloc_small_objects]
+    f44d5000-f44d5fff rw-         0      1000  [anon:arc4random data]
+    f44d6000-f44d6fff rw-         0      1000  [anon:linker_alloc_vector]
+    f44d7000-f44d7fff r--         0      1000  [anon:linker_alloc]
+    f44d8000-f44d8fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    f44d9000-f44f8fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    f44f9000-f4518fff r--         0     20000  /dev/__properties__/properties_serial
+    f4519000-f451cfff rw-         0      4000  [anon:linker_alloc_small_objects]
+    f451d000-f451dfff rw-         0      1000  [anon:linker_alloc_vector]
+    f451e000-f451efff ---         0      1000
+    f451f000-f451ffff rw-         0      1000
+    f4520000-f4520fff ---         0      1000
+    f4521000-f4521fff rw-         0      1000  [anon:linker_alloc_lob]
+    f4522000-f4522fff r--         0      1000  [anon:linker_alloc]
+    f4523000-f4523fff rw-         0      1000  [anon:linker_alloc]
+    f4524000-f4524fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    f4525000-f4525fff r--         0      1000  [anon:linker_alloc]
+    f4526000-f4526fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    f4527000-f4527fff r--         0      1000  [anon:atexit handlers]
+    f4528000-f4528fff ---         0      1000  [anon:thread signal stack guard page]
+    f4529000-f452cfff rw-         0      4000  [anon:thread signal stack]
+    f452d000-f452dfff ---         0      1000  [anon:bionic TLS guard page]
+    f452e000-f4530fff rw-         0      3000  [anon:bionic TLS]
+    f4531000-f4531fff ---         0      1000  [anon:bionic TLS guard page]
+    f4532000-f45b6fff r-x         0     85000  /system/bin/linker (BuildId: 9b0509be2af0b67d86b84b3a668f44ae)
+    f45b7000-f45b7fff rw-         0      1000  [anon:arc4random data]
+    f45b8000-f45b9fff r--     85000      2000  /system/bin/linker
+    f45ba000-f45bafff rw-     87000      1000  /system/bin/linker
+    f45bb000-f4602fff rw-         0     48000
+    f4603000-f4603fff r--         0      1000
+    f4604000-f4608fff rw-         0      5000
+    ffe11000-ffe31fff rw-         0     21000  [stack]
+    ffff0000-ffff0fff r-x         0      1000  [vectors]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 816, name: mediadrmserver  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x330
+    r0 00000003  r1 c0306201  r2 ffe30818  r3 00000000
+    r4 c0306201  r5 ffe30818  r6 f364f000  r7 00000036
+    r8 00000000  r9 f364f02c  sl ffe30838  fp ffe30820
+    ip 00000000  sp ffe307f8  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f361918800000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202010  d7  00000000f3202018
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 0000000000078d70
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 00005f33  /system/bin/mediadrmserver (main+90)
+    #06 pc 00017e5d  /system/lib/libc.so (__libc_init+48)
+    #07 pc 00004354  /system/bin/mediadrmserver (_start+100)
+
+stack:
+         ffe307b8  f3613500  [anon:libc_malloc]
+         ffe307bc  f3613508  [anon:libc_malloc]
+         ffe307c0  f331a524  [anon:libc_malloc]
+         ffe307c4  f331a534  [anon:libc_malloc]
+         ffe307c8  f331a4e4  [anon:libc_malloc]
+         ffe307cc  f390e9d5  /system/lib/libc.so (je_free+76)
+         ffe307d0  f34d0068  /dev/binder
+         ffe307d4  0000002c
+         ffe307d8  5c88098c
+         ffe307dc  00000004
+         ffe307e0  f364f02c  [anon:libc_malloc]
+         ffe307e4  f364f000  [anon:libc_malloc]
+         ffe307e8  00000000
+         ffe307ec  00000000
+         ffe307f0  f364f02c  [anon:libc_malloc]
+         ffe307f4  ffe30838  [stack]
+    #00  ffe307f8  ffe3080c  [stack]
+         ........  ........
+    #01  ffe307f8  ffe3080c  [stack]
+         ffe307fc  5c88098c
+         ffe30800  00000000
+         ffe30804  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         ffe30808  ffe30818  [stack]
+         ffe3080c  00000000
+    #02  ffe30810  f3307b18  [anon:libc_malloc]
+         ffe30814  f364f060  [anon:libc_malloc]
+         ffe30818  00000000
+         ffe3081c  00000000
+         ffe30820  00000000
+         ffe30824  00000000
+         ffe30828  f3652100  [anon:libc_malloc]
+         ffe3082c  00000000
+         ffe30830  00000100
+         ffe30834  00000000
+         ffe30838  00000000
+         ffe3083c  00000000
+         ffe30840  f3652000  [anon:libc_malloc]
+         ffe30844  00000000
+         ffe30848  5c88098c
+         ffe3084c  f364f000  [anon:libc_malloc]
+         ........  ........
+    #03  ffe30870  00000001
+         ffe30874  f364f000  [anon:libc_malloc]
+         ffe30878  00000001
+         ffe3087c  f364f000  [anon:libc_malloc]
+         ffe30880  00000001
+         ffe30884  f364f060  [anon:libc_malloc]
+         ffe30888  ffe308fc  [stack]
+         ffe3088c  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  ffe30890  adf58ed9  /system/bin/mediadrmserver (main)
+         ffe30894  ffe308f4  [stack]
+         ffe30898  adf58ed9  /system/bin/mediadrmserver (main)
+         ffe3089c  ffe308f4  [stack]
+         ffe308a0  00000001
+         ffe308a4  adf58f37  /system/bin/mediadrmserver (main+94)
+    #05  ffe308a8  f3613080  [anon:libc_malloc]
+         ffe308ac  f3617960  [anon:libc_malloc]
+         ffe308b0  f3613080  [anon:libc_malloc]
+         ffe308b4  5c88098c
+         ffe308b8  ffe308fc  [stack]
+         ffe308bc  f38b9e5f  /system/lib/libc.so (__libc_init+50)
+    #06  ffe308c0  00000000
+         ffe308c4  00000000
+         ffe308c8  00000000
+         ffe308cc  00000000
+         ffe308d0  00000000
+         ffe308d4  adf57358  /system/bin/mediadrmserver (_start+104)
+    #07  ffe308d8  adf5bdc0  /system/bin/mediadrmserver
+         ffe308dc  adf5bdc8  /system/bin/mediadrmserver
+         ffe308e0  adf5bdd0  /system/bin/mediadrmserver
+         ffe308e4  ffe308f0  [stack]
+         ffe308e8  00000000
+         ffe308ec  f45443f1  /system/bin/linker (__dl__ZN6soinfoD1Ev+68)
+         ffe308f0  00000001
+         ffe308f4  ffe318d9  [stack]
+         ffe308f8  00000000
+         ffe308fc  ffe318f4  [stack]
+         ffe30900  ffe31993  [stack]
+         ffe30904  ffe319ae  [stack]
+         ffe30908  ffe319c1  [stack]
+         ffe3090c  ffe319d6  [stack]
+         ffe30910  ffe319f1  [stack]
+         ffe30914  ffe31a04  [stack]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 915, name: Binder:816_1  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x393
+    r0 00000003  r1 c0306201  r2 f34cf888  r3 00000000
+    r4 c0306201  r5 f34cf888  r6 f3303000  r7 00000036
+    r8 00000000  r9 f330302c  sl f34cf8a8  fp f34cf890
+    ip 00000000  sp f34cf868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f332500000000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202008  d7  00000000f3202010
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 0000000000147880
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f34cf828  f3613580  [anon:libc_malloc]
+         f34cf82c  f3613588  [anon:libc_malloc]
+         f34cf830  f3630624  [anon:libc_malloc]
+         f34cf834  f3630634  [anon:libc_malloc]
+         f34cf838  f36305e4  [anon:libc_malloc]
+         f34cf83c  f390e9d5  /system/lib/libc.so (je_free+76)
+         f34cf840  f34d0000  /dev/binder
+         f34cf844  0000002c
+         f34cf848  5c88098c
+         f34cf84c  00000004
+         f34cf850  f330302c  [anon:libc_malloc]
+         f34cf854  f3303000  [anon:libc_malloc]
+         f34cf858  00000000
+         f34cf85c  00000000
+         f34cf860  f330302c  [anon:libc_malloc]
+         f34cf864  f34cf8a8
+    #00  f34cf868  f34cf87c
+         ........  ........
+    #01  f34cf868  f34cf87c
+         f34cf86c  5c88098c
+         f34cf870  00000000
+         f34cf874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f34cf878  f34cf888
+         f34cf87c  00000000
+    #02  f34cf880  f3622cf8  [anon:libc_malloc]
+         f34cf884  f3303060  [anon:libc_malloc]
+         f34cf888  00000000
+         f34cf88c  00000000
+         f34cf890  00000000
+         f34cf894  00000000
+         f34cf898  f3306100  [anon:libc_malloc]
+         f34cf89c  00000000
+         f34cf8a0  00000100
+         f34cf8a4  00000000
+         f34cf8a8  00000000
+         f34cf8ac  00000000
+         f34cf8b0  f3306000  [anon:libc_malloc]
+         f34cf8b4  00000000
+         f34cf8b8  5c88098c
+         f34cf8bc  f3303000  [anon:libc_malloc]
+         ........  ........
+    #03  f34cf8e0  00000001
+         f34cf8e4  f3303000  [anon:libc_malloc]
+         f34cf8e8  00000001
+         f34cf8ec  f3303000  [anon:libc_malloc]
+         f34cf8f0  00000001
+         f34cf8f4  f3303060  [anon:libc_malloc]
+         f34cf8f8  00000000
+         f34cf8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f34cf900  f34cf970
+         f34cf904  00000000
+         f34cf908  f361f4e0  [anon:libc_malloc]
+         f34cf90c  00000000
+         f34cf910  f34cf970
+         f34cf914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f34cf918  f361f4e0  [anon:libc_malloc]
+         f34cf91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f34cf920  f361f4e0  [anon:libc_malloc]
+         f34cf924  f3618d80  [anon:libc_malloc]
+         f34cf928  f361f4e0  [anon:libc_malloc]
+         f34cf92c  f3618d60  [anon:libc_malloc]
+         f34cf930  f361f4e0  [anon:libc_malloc]
+         f34cf934  5c88098c
+         f34cf938  f34cf970
+         f34cf93c  f34cf970
+         f34cf940  f34cf970
+         f34cf944  00000078
+         f34cf948  00000330
+         f34cf94c  f3618d70  [anon:libc_malloc]
+         f34cf950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f34cf954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f34cf958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f34cf95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f34cf960  f34cf978
+         f34cf964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f34cf968  f34cf970
+         f34cf96c  00000000
+         f34cf970  f46044a8
+         f34cf974  f3201970
+         f34cf978  00000393
+         f34cf97c  00000330
+         f34cf980  00000001
+         f34cf984  f33d3000  [anon:thread stack guard page]
+         f34cf988  000fc970
+         f34cf98c  00001000
+         f34cf990  00000000
+         f34cf994  00000000
+         f34cf998  00000003
+         f34cf99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 2808, name: Binder:816_7  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0xaf8
+    r0 00000003  r1 c0306201  r2 f2b7f888  r3 00000000
+    r4 c0306201  r5 f2b7f888  r6 f3650680  r7 00000036
+    r8 00000000  r9 f36506ac  sl f2b7f8a8  fp f2b7f890
+    ip 00000000  sp f2b7f868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  383a7265646e6931  d1  f361928000000036
+    d2  000000000000005f  d3  0000000400000041
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202000  d7  00000000f3202008
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 f278c00000000001  d17 00001000000fc970
+    d18 0000000000000000  d19 000000000002d350
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2b7f828  00000000
+         f2b7f82c  01000100
+         f2b7f830  00000000
+         f2b7f834  f362ec54  [anon:libc_malloc]
+         f2b7f838  00000000
+         f2b7f83c  f330c0b0  [anon:libc_malloc]
+         f2b7f840  f34d0000  /dev/binder
+         f2b7f844  0000002c
+         f2b7f848  5c88098c
+         f2b7f84c  00000004
+         f2b7f850  f36506ac  [anon:libc_malloc]
+         f2b7f854  f3650680  [anon:libc_malloc]
+         f2b7f858  00000000
+         f2b7f85c  00000000
+         f2b7f860  f36506ac  [anon:libc_malloc]
+         f2b7f864  f2b7f8a8
+    #00  f2b7f868  f2b7f87c
+         ........  ........
+    #01  f2b7f868  f2b7f87c
+         f2b7f86c  5c88098c
+         f2b7f870  00000000
+         f2b7f874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f2b7f878  f2b7f888
+         f2b7f87c  00000000
+    #02  f2b7f880  00000004
+         f2b7f884  f36506e0  [anon:libc_malloc]
+         f2b7f888  00000000
+         f2b7f88c  00000000
+         f2b7f890  00000000
+         f2b7f894  00000000
+         f2b7f898  f3672900  [anon:libc_malloc]
+         f2b7f89c  00000000
+         f2b7f8a0  00000100
+         f2b7f8a4  00000000
+         f2b7f8a8  00000000
+         f2b7f8ac  00000000
+         f2b7f8b0  f3672800  [anon:libc_malloc]
+         f2b7f8b4  00000000
+         f2b7f8b8  5c88098c
+         f2b7f8bc  f3650680  [anon:libc_malloc]
+         ........  ........
+    #03  f2b7f8e0  f3650680  [anon:libc_malloc]
+         f2b7f8e4  f3650680  [anon:libc_malloc]
+         f2b7f8e8  00000000
+         f2b7f8ec  f3650680  [anon:libc_malloc]
+         f2b7f8f0  00000000
+         f2b7f8f4  f36506e0  [anon:libc_malloc]
+         f2b7f8f8  00000000
+         f2b7f8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f2b7f900  f2b7f970
+         f2b7f904  00000000
+         f2b7f908  f361f600  [anon:libc_malloc]
+         f2b7f90c  00000000
+         f2b7f910  f2b7f970
+         f2b7f914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f2b7f918  f361f600  [anon:libc_malloc]
+         f2b7f91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f2b7f920  f361f600  [anon:libc_malloc]
+         f2b7f924  f330c3c0  [anon:libc_malloc]
+         f2b7f928  f361f600  [anon:libc_malloc]
+         f2b7f92c  f330c200  [anon:libc_malloc]
+         f2b7f930  f361f600  [anon:libc_malloc]
+         f2b7f934  5c88098c
+         f2b7f938  f2b7f970
+         f2b7f93c  f2b7f970
+         f2b7f940  f2b7f970
+         f2b7f944  00000078
+         f2b7f948  00000330
+         f2b7f94c  f330c440  [anon:libc_malloc]
+         f2b7f950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2b7f954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f2b7f958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2b7f95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f2b7f960  f2b7f978
+         f2b7f964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2b7f968  f2b7f970
+         f2b7f96c  00000000
+         f2b7f970  f2d10970
+         f2b7f974  f2a82970
+         f2b7f978  00000af8
+         f2b7f97c  00000330
+         f2b7f980  00000001
+         f2b7f984  f2a83000  [anon:thread stack guard page]
+         f2b7f988  000fc970
+         f2b7f98c  00001000
+         f2b7f990  00000000
+         f2b7f994  00000000
+         f2b7f998  00000003
+         f2b7f99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 2859, name: Binder:816_D  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0xb2b
+    r0 00000003  r1 c0306201  r2 f24ff888  r3 00000000
+    r4 c0306201  r5 f24ff888  r6 f3651d00  r7 00000036
+    r8 00000000  r9 f3651d2c  sl f24ff8a8  fp f24ff890
+    ip 00000000  sp f24ff868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  f361920000000000  d1  0000000000000000
+    d2  0000000400000000  d3  0000000000000000
+    d4  000000000000002c  d5  0000000000000000
+    d6  00000000f34d00d8  d7  00000000f34d0108
+    d8  000003f500000330  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 000000000010ff68
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f24ff828  00000000
+         f24ff82c  01000100
+         f24ff830  00000000
+         f24ff834  fffffff6
+         f24ff838  00000000
+         f24ff83c  00000000
+         f24ff840  f34d00d8  /dev/binder
+         f24ff844  0000002c
+         f24ff848  5c88098c
+         f24ff84c  00000004
+         f24ff850  f3651d2c  [anon:libc_malloc]
+         f24ff854  f3651d60  [anon:libc_malloc]
+         f24ff858  00000000
+         f24ff85c  00000000
+         f24ff860  f3651d2c  [anon:libc_malloc]
+         f24ff864  f24ff8a8
+    #00  f24ff868  f24ff87c
+         ........  ........
+    #01  f24ff868  f24ff87c
+         f24ff86c  5c88098c
+         f24ff870  00000000
+         f24ff874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f24ff878  f24ff888
+         f24ff87c  00000000
+    #02  f24ff880  00000001
+         f24ff884  f3651d60  [anon:libc_malloc]
+         f24ff888  00000000
+         f24ff88c  00000000
+         f24ff890  00000000
+         f24ff894  00000000
+         f24ff898  f2b94700  [anon:libc_malloc]
+         f24ff89c  00000000
+         f24ff8a0  00000100
+         f24ff8a4  00000000
+         f24ff8a8  00000000
+         f24ff8ac  00000000
+         f24ff8b0  f2b94600  [anon:libc_malloc]
+         f24ff8b4  00000000
+         f24ff8b8  5c88098c
+         f24ff8bc  f3651d00  [anon:libc_malloc]
+         ........  ........
+    #03  f24ff8e0  f3651d00  [anon:libc_malloc]
+         f24ff8e4  f3651d00  [anon:libc_malloc]
+         f24ff8e8  00000000
+         f24ff8ec  f3651d00  [anon:libc_malloc]
+         f24ff8f0  00000000
+         f24ff8f4  f3651d60  [anon:libc_malloc]
+         f24ff8f8  00000000
+         f24ff8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f24ff900  f24ff970
+         f24ff904  00000000
+         f24ff908  f361ff30  [anon:libc_malloc]
+         f24ff90c  00000000
+         f24ff910  f24ff970
+         f24ff914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f24ff918  f361ff30  [anon:libc_malloc]
+         f24ff91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f24ff920  f361ff30  [anon:libc_malloc]
+         f24ff924  f3668010  [anon:libc_malloc]
+         f24ff928  f361ff30  [anon:libc_malloc]
+         f24ff92c  f3618fe0  [anon:libc_malloc]
+         f24ff930  f361ff30  [anon:libc_malloc]
+         f24ff934  5c88098c
+         f24ff938  f24ff970
+         f24ff93c  f24ff970
+         f24ff940  f24ff970
+         f24ff944  00000078
+         f24ff948  00000330
+         f24ff94c  f3618ff0  [anon:libc_malloc]
+         f24ff950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f24ff954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f24ff958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f24ff95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f24ff960  f24ff978
+         f24ff964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f24ff968  f24ff970
+         f24ff96c  00000000
+         f24ff970  f268e970
+         f24ff974  00000000
+         f24ff978  00000b2b
+         f24ff97c  00000330
+         f24ff980  00000001
+         f24ff984  f2403000  [anon:thread stack guard page]
+         f24ff988  000fc970
+         f24ff98c  00001000
+         f24ff990  00000000
+         f24ff994  00000000
+         f24ff998  00000003
+         f24ff99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 5355, name: Binder:816_2  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x14eb
+    r0 00000003  r1 c0306201  r2 f3201888  r3 00000000
+    r4 c0306201  r5 f3201888  r6 f364f780  r7 00000036
+    r8 00000000  r9 f364f7ac  sl f32018a8  fp f3201890
+    ip 00000000  sp f3201868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f361919000000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202b10  d7  00000000f3202b18
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 0000000000019408
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f3201828  00000000
+         f320182c  01000100
+         f3201830  00000000
+         f3201834  f362e954  [anon:libc_malloc]
+         f3201838  f32018b4
+         f320183c  f38eb5c8  /system/lib/libc.so (_ZL33__pthread_mutex_lock_with_timeoutP24pthread_mutex_internal_tbPK8timespec+571)
+         f3201840  f32018b4
+         f3201844  00000000
+         f3201848  f38eb5c8  /system/lib/libc.so (_ZL33__pthread_mutex_lock_with_timeoutP24pthread_mutex_internal_tbPK8timespec+571)
+         f320184c  00000001
+         f3201850  f32018b4
+         f3201854  f32019c8
+         f3201858  f32018b4
+         f320185c  00000000
+         f3201860  f32019c8
+         f3201864  00000000
+    #00  f3201868  f320187c
+         ........  ........
+    #01  f3201868  f320187c
+         f320186c  5c88098c
+         f3201870  00000000
+         f3201874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f3201878  f3201888
+         f320187c  00000000
+    #02  f3201880  00000000
+         f3201884  f364f7e0  [anon:libc_malloc]
+         f3201888  00000000
+         f320188c  00000000
+         f3201890  00000000
+         f3201894  00000000
+         f3201898  f3652b00  [anon:libc_malloc]
+         f320189c  00000000
+         f32018a0  00000100
+         f32018a4  00000000
+         f32018a8  00000000
+         f32018ac  00000000
+         f32018b0  f3652a00  [anon:libc_malloc]
+         f32018b4  00000000
+         f32018b8  5c88098c
+         f32018bc  f364f780  [anon:libc_malloc]
+         ........  ........
+    #03  f32018e0  00000001
+         f32018e4  f364f780  [anon:libc_malloc]
+         f32018e8  00000000
+         f32018ec  f364f780  [anon:libc_malloc]
+         f32018f0  00000000
+         f32018f4  f364f7e0  [anon:libc_malloc]
+         f32018f8  00000000
+         f32018fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f3201900  f3201970
+         f3201904  00000000
+         f3201908  f361f510  [anon:libc_malloc]
+         f320190c  00000000
+         f3201910  f3201970
+         f3201914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f3201918  f361f510  [anon:libc_malloc]
+         f320191c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f3201920  f361f510  [anon:libc_malloc]
+         f3201924  f3618db0  [anon:libc_malloc]
+         f3201928  f361f510  [anon:libc_malloc]
+         f320192c  f3618d90  [anon:libc_malloc]
+         f3201930  f361f510  [anon:libc_malloc]
+         f3201934  5c88098c
+         f3201938  f3201970
+         f320193c  f3201970
+         f3201940  f3201970
+         f3201944  00000078
+         f3201948  00000330
+         f320194c  f3618da0  [anon:libc_malloc]
+         f3201950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f3201954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f3201958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f320195c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f3201960  f3201978
+         f3201964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f3201968  f3201970
+         f320196c  00000000
+         f3201970  f34cf970
+         f3201974  f3104970
+         f3201978  000014eb
+         f320197c  00000330
+         f3201980  00000001
+         f3201984  f3105000  [anon:thread stack guard page]
+         f3201988  000fc970
+         f320198c  00001000
+         f3201990  00000000
+         f3201994  00000000
+         f3201998  00000003
+         f320199c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 5356, name: Binder:816_3  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x14ec
+    r0 00000003  r1 c0306201  r2 f3104888  r3 00000000
+    r4 c0306201  r5 f3104888  r6 f3303780  r7 00000036
+    r8 00000000  r9 f33037ac  sl f31048a8  fp f3104890
+    ip 00000000  sp f3104868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f332505800000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202008  d7  00000000f3202010
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 0000000000193070
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f3104828  f3613680  [anon:libc_malloc]
+         f310482c  f3613688  [anon:libc_malloc]
+         f3104830  f362e7c4  [anon:libc_malloc]
+         f3104834  f362e7d4  [anon:libc_malloc]
+         f3104838  f362e784  [anon:libc_malloc]
+         f310483c  f36686d0  [anon:libc_malloc]
+         f3104840  f34d0068  /dev/binder
+         f3104844  0000002c
+         f3104848  5c88098c
+         f310484c  00000004
+         f3104850  f33037ac  [anon:libc_malloc]
+         f3104854  f3303780  [anon:libc_malloc]
+         f3104858  00000000
+         f310485c  00000000
+         f3104860  f33037ac  [anon:libc_malloc]
+         f3104864  f31048a8
+    #00  f3104868  f310487c
+         ........  ........
+    #01  f3104868  f310487c
+         f310486c  5c88098c
+         f3104870  00000000
+         f3104874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f3104878  f3104888
+         f310487c  00000000
+    #02  f3104880  f3622f78  [anon:libc_malloc]
+         f3104884  f33037e0  [anon:libc_malloc]
+         f3104888  00000000
+         f310488c  00000000
+         f3104890  00000000
+         f3104894  00000000
+         f3104898  f3306b00  [anon:libc_malloc]
+         f310489c  00000000
+         f31048a0  00000100
+         f31048a4  00000000
+         f31048a8  00000000
+         f31048ac  00000000
+         f31048b0  f3306a00  [anon:libc_malloc]
+         f31048b4  00000000
+         f31048b8  5c88098c
+         f31048bc  f3303780  [anon:libc_malloc]
+         ........  ........
+    #03  f31048e0  f3303780  [anon:libc_malloc]
+         f31048e4  f3303780  [anon:libc_malloc]
+         f31048e8  00000000
+         f31048ec  f3303780  [anon:libc_malloc]
+         f31048f0  00000000
+         f31048f4  f33037e0  [anon:libc_malloc]
+         f31048f8  00000000
+         f31048fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f3104900  f3104970
+         f3104904  00000000
+         f3104908  f361f5a0  [anon:libc_malloc]
+         f310490c  00000000
+         f3104910  f3104970
+         f3104914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f3104918  f361f5a0  [anon:libc_malloc]
+         f310491c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f3104920  f361f5a0  [anon:libc_malloc]
+         f3104924  f3618dd0  [anon:libc_malloc]
+         f3104928  f361f5a0  [anon:libc_malloc]
+         f310492c  f3618da0  [anon:libc_malloc]
+         f3104930  f361f5a0  [anon:libc_malloc]
+         f3104934  5c88098c
+         f3104938  f3104970
+         f310493c  f3104970
+         f3104940  f3104970
+         f3104944  00000078
+         f3104948  00000330
+         f310494c  f3618db0  [anon:libc_malloc]
+         f3104950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f3104954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f3104958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f310495c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f3104960  f3104978
+         f3104964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f3104968  f3104970
+         f310496c  00000000
+         f3104970  f3201970
+         f3104974  f3007970
+         f3104978  000014ec
+         f310497c  00000330
+         f3104980  00000001
+         f3104984  f3008000  [anon:thread stack guard page]
+         f3104988  000fc970
+         f310498c  00001000
+         f3104990  00000000
+         f3104994  00000000
+         f3104998  00000003
+         f310499c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 5357, name: HwBinder:816_1  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x14ed
+    r0 00000006  r1 c0306201  r2 f3007888  r3 00000000
+    r4 c0306201  r5 f3007888  r6 f36398c0  r7 00000036
+    r8 00000000  r9 f36398f0  sl f30078a8  fp f3007890
+    ip 00000000  sp f3007868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000002000000001  d1  0000000000000000
+    d2  f3307050f3623680  d3  f3308a40f3308450
+    d4  000000006e696775  d5  0000000000000000
+    d6  0000000000000000  d7  0000000000000000
+    d8  000003f500000330  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 00000000000008c0  d17 000000000002d570
+    d18 00000000000008a0  d19 000000000002d540
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 0001012d  /system/lib/libhwbinder.so (_ZN7android8hardware14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 0001023d  /system/lib/libhwbinder.so (_ZN7android8hardware14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00010847  /system/lib/libhwbinder.so (_ZN7android8hardware14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 00017545  /system/lib/libhwbinder.so (_ZN7android8hardware10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f3007828  f3657000  [anon:libc_malloc]
+         f300782c  00000020
+         f3007830  00000000
+         f3007834  f361fb70  [anon:libc_malloc]
+         f3007838  f3613708  [anon:libc_malloc]
+         f300783c  00000000
+         f3007840  f3669ba0  [anon:libc_malloc]
+         f3007844  f38fc4bb  /system/lib/libc.so (je_arena_ralloc+1226)
+         f3007848  5c88098c
+         f300784c  00000004
+         f3007850  f36398f0  [anon:libc_malloc]
+         f3007854  f36398c0  [anon:libc_malloc]
+         f3007858  00000000
+         f300785c  00000000
+         f3007860  f36398f0  [anon:libc_malloc]
+         f3007864  f30078a8
+    #00  f3007868  f300787c
+         ........  ........
+    #01  f3007868  f300787c
+         f300786c  5c88098c
+         f3007870  00000000
+         f3007874  f3812131  /system/lib/libhwbinder.so (_ZN7android8hardware14IPCThreadState14talkWithDriverEb+208)
+         f3007878  f3007888
+         f300787c  00000000
+    #02  f3007880  f3613708  [anon:libc_malloc]
+         f3007884  f3639934  [anon:libc_malloc]
+         f3007888  00000000
+         f300788c  00000000
+         f3007890  00000000
+         f3007894  00000000
+         f3007898  f3655500  [anon:libc_malloc]
+         f300789c  00000000
+         f30078a0  00000100
+         f30078a4  00000000
+         f30078a8  00000000
+         f30078ac  00000000
+         f30078b0  f3655400  [anon:libc_malloc]
+         f30078b4  00000000
+         f30078b8  5c88098c
+         f30078bc  f36398c0  [anon:libc_malloc]
+         ........  ........
+    #03  f30078e0  00000005
+         f30078e4  f36398c0  [anon:libc_malloc]
+         f30078e8  00000001
+         f30078ec  f36398c0  [anon:libc_malloc]
+         f30078f0  00000001
+         f30078f4  f3639934  [anon:libc_malloc]
+         f30078f8  00000000
+         f30078fc  f381284b  /system/lib/libhwbinder.so (_ZN7android8hardware14IPCThreadState14joinThreadPoolEb+42)
+    #04  f3007900  f361f570  [anon:libc_malloc]
+         f3007904  00000000
+         f3007908  f361f570  [anon:libc_malloc]
+         f300790c  00000000
+         f3007910  f3007970
+         f3007914  f3819549  /system/lib/libhwbinder.so (_ZN7android8hardware10PoolThread10threadLoopEv+16)
+    #05  f3007918  f361f570  [anon:libc_malloc]
+         f300791c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f3007920  f361f570  [anon:libc_malloc]
+         f3007924  f3618e80  [anon:libc_malloc]
+         f3007928  f361f570  [anon:libc_malloc]
+         f300792c  f3618e60  [anon:libc_malloc]
+         f3007930  f361f570  [anon:libc_malloc]
+         f3007934  5c88098c
+         f3007938  f3007970
+         f300793c  f3007970
+         f3007940  f3007970
+         f3007944  00000078
+         f3007948  00000330
+         f300794c  f3618e70  [anon:libc_malloc]
+         f3007950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f3007954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f3007958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f300795c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f3007960  f3007978
+         f3007964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f3007968  f3007970
+         f300796c  00000000
+         f3007970  f3104970
+         f3007974  f2f0a970
+         f3007978  000014ed
+         f300797c  00000330
+         f3007980  00000001
+         f3007984  f2f0b000  [anon:thread stack guard page]
+         f3007988  000fc970
+         f300798c  00001000
+         f3007990  00000000
+         f3007994  00000000
+         f3007998  00000003
+         f300799c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 6106, name: Binder:816_9  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x17da
+    r0 f3f3501c  r1 00000089  r2 00000002  r3 00000000
+    r4 00000000  r5 ffffffff  r6 5c88098c  r7 000000f0
+    r8 00000002  r9 00000000  sl 00000000  fp 00000089
+    ip f2985698  sp f2985688  lr f38eb439  pc f38baec4  cpsr 000f0010
+    d0  00720064006e0073  d1  002e006400690069
+    d2  002e006d00720064  d3  006d007200440033
+    d4  0000000000000034  d5  0000000000000000
+    d6  00000000f34d0098  d7  00000000f34d00d0
+    d8  000003f500000330  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 00000000f36234f0  d19 000000000017eae8
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00 pc 00018ec4  /system/lib/libc.so (syscall+28)
+    #01 pc 00049435  /system/lib/libc.so (_ZL33__pthread_mutex_lock_with_timeoutP24pthread_mutex_internal_tbPK8timespec+168)
+    #02 pc 00025851  /system/lib/libmediadrm.so (_ZN7android6DrmHal12closeSessionERKNS_6VectorIhEE+24)
+    #03 pc 00020ff9  /system/lib/libmediadrm.so (_ZN7android5BnDrm10onTransactEjRKNS_6ParcelEPS1_j+1824)
+    #04 pc 00040e2b  /system/lib/libbinder.so (_ZN7android7BBinder8transactEjRKNS_6ParcelEPS1_j+70)
+    #05 pc 00048c8b  /system/lib/libbinder.so (_ZN7android14IPCThreadState14executeCommandEi+582)
+    #06 pc 00048949  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+112)
+    #07 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #08 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #09 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #10 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #11 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2985648  f29856bc
+         f298564c  00000000
+         f2985650  f38eb5c8  /system/lib/libc.so (_ZL33__pthread_mutex_lock_with_timeoutP24pthread_mutex_internal_tbPK8timespec+571)
+         f2985654  00000002
+         f2985658  f2985678
+         f298565c  f38bcabf  /system/lib/libc.so (_ZL12should_tracev+114)
+         f2985660  f29856bc
+         f2985664  f38bc9cb  /system/lib/libc.so (_Z18bionic_trace_beginPKc+26)
+         f2985668  5c88098c
+         f298566c  f29856bc
+         f2985670  3b9ac9ff
+         f2985674  00000002
+         f2985678  00000000
+         f298567c  00000000
+         f2985680  00000000
+         f2985684  00000000
+    #00  f2985688  f3f3501c  /system/lib/libmediadrm.so
+         f298568c  f29859c8
+         f2985690  00000002
+         f2985694  00000000
+    #01  f2985698  00000000
+         f298569c  00000000
+         f29856a0  ffffffff
+         f29856a4  5c88098c
+         f29856a8  5c88098c
+         f29856ac  00000022
+         f29856b0  5c88098c
+         f29856b4  00000007
+         f29856b8  f29857a4
+         f29856bc  ffffff00
+         f29856c0  5c88098c
+         f29856c4  f29857a4
+         f29856c8  f3f2db8c  /system/lib/libmediadrm.so
+         f29856cc  f3307190  [anon:libc_malloc]
+         f29856d0  00000006
+         f29856d4  f2985928
+         ........  ........
+    #02  f29856e8  00000000
+         f29856ec  00000004
+         f29856f0  f29857a4
+         f29856f4  00000004
+         f29856f8  f3616170  [anon:libc_malloc]
+         f29856fc  f4252613  /system/lib/libbinder.so (_ZNK7android6Parcel4readEPvj+110)
+         f2985700  f29857a4
+         f2985704  f29857a4
+         f2985708  f298583c
+         f298570c  00000004
+         f2985710  00000006
+         f2985714  f3f1b403  /system/lib/libmediadrm.so (_ZNK7android5BnDrm10readVectorERKNS_6ParcelERNS_6VectorIhEE+54)
+         f2985718  5c88098c
+         f298571c  5c88098c
+         f2985720  f29857a4
+         f2985724  f3f2db8c  /system/lib/libmediadrm.so
+         ........  ........
+    #03  f2985730  5c88098c
+         f2985734  f3650e00  [anon:libc_malloc]
+         f2985738  f3650e00  [anon:libc_malloc]
+         f298573c  f3650e2c  [anon:libc_malloc]
+         f2985740  00000000
+         f2985744  f4250fc9  /system/lib/libbinder.so (_ZNK7android6Parcel10readIntPtrEv+20)
+         f2985748  00007206
+         f298574c  5c88098c
+         f2985750  00000000
+         f2985754  f424b25b  /system/lib/libbinder.so (_ZN7android14IPCThreadState15waitForResponseEPNS_6ParcelEPi+114)
+         f2985758  00000040
+         f298575c  f2985778
+         f2985760  f367f304  [anon:libc_malloc]
+         f2985764  f2985798
+         f2985768  f2985790
+         f298576c  f29857a0
+         ........  ........
+    #04  f29857e0  00000010
+         f29857e4  f3650e00  [anon:libc_malloc]
+         f29857e8  00000000
+         f29857ec  f4242de5  /system/lib/libbinder.so (_ZN7android7BBinder8transactEjRKNS_6ParcelEPS1_j)
+         f29857f0  f3650e98  [anon:libc_malloc]
+         f29857f4  f424ac8d  /system/lib/libbinder.so (_ZN7android14IPCThreadState14executeCommandEi+584)
+    #05  f29857f8  00000010
+         f29857fc  f424b701  /system/lib/libbinder.so (_ZN7android14IPCThreadState10freeBufferEPNS_6ParcelEPKhjPKyjPv)
+         f2985800  f3650e00  [anon:libc_malloc]
+         f2985804  f2b91000  [anon:libc_malloc]
+         f2985808  00000000
+         f298580c  00000000
+         f2985810  00000000
+         f2985814  00000000
+         f2985818  00000000
+         f298581c  00000000
+         f2985820  00000000
+         f2985824  00000000
+         f2985828  00000000
+         f298582c  01000100
+         f2985830  00000000
+         f2985834  f331b614  [anon:libc_malloc]
+         ........  ........
+    #06  f29858e0  00000000
+         f29858e4  f2985928
+         f29858e8  f3668060  [anon:libc_malloc]
+         f29858ec  f3650e00  [anon:libc_malloc]
+         f29858f0  00000000
+         f29858f4  f3650e60  [anon:libc_malloc]
+         f29858f8  00000000
+         f29858fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #07  f2985900  f2985970
+         f2985904  00000000
+         f2985908  f330f090  [anon:libc_malloc]
+         f298590c  00000000
+         f2985910  f2985970
+         f2985914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #08  f2985918  f330f090  [anon:libc_malloc]
+         f298591c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #09  f2985920  f330f090  [anon:libc_malloc]
+         f2985924  f3668090  [anon:libc_malloc]
+         f2985928  f330f090  [anon:libc_malloc]
+         f298592c  f330c1d0  [anon:libc_malloc]
+         f2985930  f330f090  [anon:libc_malloc]
+         f2985934  5c88098c
+         f2985938  f2985970
+         f298593c  f2985970
+         f2985940  f2985970
+         f2985944  00000078
+         f2985948  00000330
+         f298594c  f3668060  [anon:libc_malloc]
+         f2985950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2985954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #10  f2985958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f298595c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #11  f2985960  f2985978
+         f2985964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2985968  f2985970
+         f298596c  00000000
+         f2985970  f2a82970
+         f2985974  f2888970
+         f2985978  000017da
+         f298597c  00000330
+         f2985980  00000001
+         f2985984  f2889000  [anon:thread stack guard page]
+         f2985988  000fc970
+         f298598c  00001000
+         f2985990  00000000
+         f2985994  00000000
+         f2985998  00000003
+         f298599c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 12983, name: Binder:816_8  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x32b7
+    r0 00000003  r1 c0306201  r2 f2a82888  r3 00000000
+    r4 c0306201  r5 f2a82888  r6 f3304e00  r7 00000036
+    r8 00000000  r9 f3304e2c  sl f2a828a8  fp f2a82890
+    ip 00000000  sp f2a82868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f332514000000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202018  d7  00000000f3202020
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 00000000000925b8
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2a82828  00000000
+         f2a8282c  01000100
+         f2a82830  00000000
+         f2a82834  00000001
+         f2a82838  00000000
+         f2a8283c  f36686a0  [anon:libc_malloc]
+         f2a82840  f34d0000  /dev/binder
+         f2a82844  0000002c
+         f2a82848  5c88098c
+         f2a8284c  00000004
+         f2a82850  f3304e2c  [anon:libc_malloc]
+         f2a82854  f3304e00  [anon:libc_malloc]
+         f2a82858  00000000
+         f2a8285c  00000000
+         f2a82860  f3304e2c  [anon:libc_malloc]
+         f2a82864  f2a828a8
+    #00  f2a82868  f2a8287c
+         ........  ........
+    #01  f2a82868  f2a8287c
+         f2a8286c  5c88098c
+         f2a82870  00000000
+         f2a82874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f2a82878  f2a82888
+         f2a8287c  00000000
+    #02  f2a82880  00000004
+         f2a82884  f3304e60  [anon:libc_malloc]
+         f2a82888  00000000
+         f2a8288c  00000000
+         f2a82890  00000000
+         f2a82894  00000000
+         f2a82898  f335c900  [anon:libc_malloc]
+         f2a8289c  00000000
+         f2a828a0  00000100
+         f2a828a4  00000000
+         f2a828a8  00000000
+         f2a828ac  00000000
+         f2a828b0  f335c800  [anon:libc_malloc]
+         f2a828b4  00000000
+         f2a828b8  5c88098c
+         f2a828bc  f3304e00  [anon:libc_malloc]
+         ........  ........
+    #03  f2a828e0  f3304e00  [anon:libc_malloc]
+         f2a828e4  f3304e00  [anon:libc_malloc]
+         f2a828e8  00000000
+         f2a828ec  f3304e00  [anon:libc_malloc]
+         f2a828f0  00000000
+         f2a828f4  f3304e60  [anon:libc_malloc]
+         f2a828f8  00000000
+         f2a828fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f2a82900  f2a82970
+         f2a82904  00000000
+         f2a82908  f330f000  [anon:libc_malloc]
+         f2a8290c  00000000
+         f2a82910  f2a82970
+         f2a82914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f2a82918  f330f000  [anon:libc_malloc]
+         f2a8291c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f2a82920  f330f000  [anon:libc_malloc]
+         f2a82924  f330c720  [anon:libc_malloc]
+         f2a82928  f330f000  [anon:libc_malloc]
+         f2a8292c  f330c700  [anon:libc_malloc]
+         f2a82930  f330f000  [anon:libc_malloc]
+         f2a82934  5c88098c
+         f2a82938  f2a82970
+         f2a8293c  f2a82970
+         f2a82940  f2a82970
+         f2a82944  00000078
+         f2a82948  00000330
+         f2a8294c  f330c740  [anon:libc_malloc]
+         f2a82950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2a82954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f2a82958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2a8295c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f2a82960  f2a82978
+         f2a82964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2a82968  f2a82970
+         f2a8296c  00000000
+         f2a82970  f2b7f970
+         f2a82974  f2985970
+         f2a82978  000032b7
+         f2a8297c  00000330
+         f2a82980  00000001
+         f2a82984  f2986000  [anon:thread stack guard page]
+         f2a82988  000fc970
+         f2a8298c  00001000
+         f2a82990  00000000
+         f2a82994  00000000
+         f2a82998  00000003
+         f2a8299c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 27768, name: Binder:816_5  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x6c78
+    r0 00000003  r1 c0306201  r2 f2e0d888  r3 00000000
+    r4 c0306201  r5 f2e0d888  r6 f364ff00  r7 00000036
+    r8 00000000  r9 f364ff2c  sl f2e0d8a8  fp f2e0d890
+    ip 00000000  sp f2e0d868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f36191e000000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202008  d7  00000000f3202010
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 00000000000cb4c8
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2e0d828  00000000
+         f2e0d82c  01000100
+         f2e0d830  00000000
+         f2e0d834  f331c3f4  [anon:libc_malloc]
+         f2e0d838  00000000
+         f2e0d83c  00000000
+         f2e0d840  f34d0000  /dev/binder
+         f2e0d844  0000002c
+         f2e0d848  5c88098c
+         f2e0d84c  00000004
+         f2e0d850  f364ff2c  [anon:libc_malloc]
+         f2e0d854  f364ff60  [anon:libc_malloc]
+         f2e0d858  00000000
+         f2e0d85c  00000000
+         f2e0d860  f364ff2c  [anon:libc_malloc]
+         f2e0d864  f2e0d8a8
+    #00  f2e0d868  f2e0d87c
+         ........  ........
+    #01  f2e0d868  f2e0d87c
+         f2e0d86c  5c88098c
+         f2e0d870  00000000
+         f2e0d874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f2e0d878  f2e0d888
+         f2e0d87c  00000000
+    #02  f2e0d880  00000004
+         f2e0d884  f364ff60  [anon:libc_malloc]
+         f2e0d888  00000000
+         f2e0d88c  00000000
+         f2e0d890  00000000
+         f2e0d894  00000000
+         f2e0d898  f3655f00  [anon:libc_malloc]
+         f2e0d89c  00000000
+         f2e0d8a0  00000100
+         f2e0d8a4  00000000
+         f2e0d8a8  00000000
+         f2e0d8ac  00000000
+         f2e0d8b0  f3655e00  [anon:libc_malloc]
+         f2e0d8b4  00000000
+         f2e0d8b8  5c88098c
+         f2e0d8bc  f364ff00  [anon:libc_malloc]
+         ........  ........
+    #03  f2e0d8e0  00000001
+         f2e0d8e4  f364ff00  [anon:libc_malloc]
+         f2e0d8e8  00000000
+         f2e0d8ec  f364ff00  [anon:libc_malloc]
+         f2e0d8f0  00000000
+         f2e0d8f4  f364ff60  [anon:libc_malloc]
+         f2e0d8f8  00000000
+         f2e0d8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f2e0d900  f2e0d970
+         f2e0d904  00000000
+         f2e0d908  f330f030  [anon:libc_malloc]
+         f2e0d90c  00000000
+         f2e0d910  f2e0d970
+         f2e0d914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f2e0d918  f330f030  [anon:libc_malloc]
+         f2e0d91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f2e0d920  f330f030  [anon:libc_malloc]
+         f2e0d924  f3618ee0  [anon:libc_malloc]
+         f2e0d928  f330f030  [anon:libc_malloc]
+         f2e0d92c  f330c4f0  [anon:libc_malloc]
+         f2e0d930  f330f030  [anon:libc_malloc]
+         f2e0d934  5c88098c
+         f2e0d938  f2e0d970
+         f2e0d93c  f2e0d970
+         f2e0d940  f2e0d970
+         f2e0d944  00000078
+         f2e0d948  00000330
+         f2e0d94c  f3618f10  [anon:libc_malloc]
+         f2e0d950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2e0d954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f2e0d958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2e0d95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f2e0d960  f2e0d978
+         f2e0d964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2e0d968  f2e0d970
+         f2e0d96c  00000000
+         f2e0d970  f2f0a970
+         f2e0d974  f2d10970
+         f2e0d978  00006c78
+         f2e0d97c  00000330
+         f2e0d980  00000001
+         f2e0d984  f2d11000  [anon:thread stack guard page]
+         f2e0d988  000fc970
+         f2e0d98c  00001000
+         f2e0d990  00000000
+         f2e0d994  00000000
+         f2e0d998  00000003
+         f2e0d99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 27769, name: Binder:816_6  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x6c79
+    r0 00000003  r1 c0306201  r2 f2d10888  r3 00000000
+    r4 c0306201  r5 f2d10888  r6 f3304680  r7 00000036
+    r8 00000000  r9 f33046ac  sl f2d108a8  fp f2d10890
+    ip 00000000  sp f2d10868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  0000000000000000  d1  f33250f000000000
+    d2  0000000000000000  d3  0000000400000000
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202b10  d7  00000000f3202b18
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 00000000000377d0
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2d10828  00000000
+         f2d1082c  01000100
+         f2d10830  00000000
+         f2d10834  f331abf4  [anon:libc_malloc]
+         f2d10838  00000000
+         f2d1083c  f330c5a0  [anon:libc_malloc]
+         f2d10840  f34d0000  /dev/binder
+         f2d10844  0000002c
+         f2d10848  5c88098c
+         f2d1084c  00000004
+         f2d10850  f33046ac  [anon:libc_malloc]
+         f2d10854  f3304680  [anon:libc_malloc]
+         f2d10858  00000000
+         f2d1085c  00000000
+         f2d10860  f33046ac  [anon:libc_malloc]
+         f2d10864  f2d108a8
+    #00  f2d10868  f2d1087c
+         ........  ........
+    #01  f2d10868  f2d1087c
+         f2d1086c  5c88098c
+         f2d10870  00000000
+         f2d10874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f2d10878  f2d10888
+         f2d1087c  00000000
+    #02  f2d10880  00000004
+         f2d10884  f33046e0  [anon:libc_malloc]
+         f2d10888  00000000
+         f2d1088c  00000000
+         f2d10890  00000000
+         f2d10894  00000000
+         f2d10898  f332df00  [anon:libc_malloc]
+         f2d1089c  00000000
+         f2d108a0  00000100
+         f2d108a4  00000000
+         f2d108a8  00000000
+         f2d108ac  00000000
+         f2d108b0  f332de00  [anon:libc_malloc]
+         f2d108b4  00000000
+         f2d108b8  5c88098c
+         f2d108bc  f3304680  [anon:libc_malloc]
+         ........  ........
+    #03  f2d108e0  f3304680  [anon:libc_malloc]
+         f2d108e4  f3304680  [anon:libc_malloc]
+         f2d108e8  00000000
+         f2d108ec  f3304680  [anon:libc_malloc]
+         f2d108f0  00000000
+         f2d108f4  f33046e0  [anon:libc_malloc]
+         f2d108f8  00000000
+         f2d108fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f2d10900  f2d10970
+         f2d10904  00000000
+         f2d10908  f330f0c0  [anon:libc_malloc]
+         f2d1090c  00000000
+         f2d10910  f2d10970
+         f2d10914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f2d10918  f330f0c0  [anon:libc_malloc]
+         f2d1091c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f2d10920  f330f0c0  [anon:libc_malloc]
+         f2d10924  f330c4e0  [anon:libc_malloc]
+         f2d10928  f330f0c0  [anon:libc_malloc]
+         f2d1092c  f330c600  [anon:libc_malloc]
+         f2d10930  f330f0c0  [anon:libc_malloc]
+         f2d10934  5c88098c
+         f2d10938  f2d10970
+         f2d1093c  f2d10970
+         f2d10940  f2d10970
+         f2d10944  00000078
+         f2d10948  00000330
+         f2d1094c  f330c090  [anon:libc_malloc]
+         f2d10950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2d10954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f2d10958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2d1095c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f2d10960  f2d10978
+         f2d10964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2d10968  f2d10970
+         f2d1096c  00000000
+         f2d10970  f2e0d970
+         f2d10974  f2b7f970
+         f2d10978  00006c79
+         f2d1097c  00000330
+         f2d10980  00000001
+         f2d10984  f2c14000  [anon:thread stack guard page]
+         f2d10988  000fc970
+         f2d1098c  00001000
+         f2d10990  00000000
+         f2d10994  00000000
+         f2d10998  00000003
+         f2d1099c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 32241, name: Binder:816_A  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x7df1
+    r0 00000003  r1 c0306201  r2 f2888888  r3 00000000
+    r4 c0306201  r5 f2888888  r6 f3305580  r7 00000036
+    r8 00000000  r9 f33055ac  sl f28888a8  fp f2888890
+    ip 00000000  sp f2888868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  f334700000000000  d1  0000000000000000
+    d2  000007ac00000000  d3  0000000000000000
+    d4  9f2b9a6a5af6a47e  d5  320b0bd7b63d659f
+    d6  4a4815b50b36f99c  d7  40715daf9c74980c
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 00000000000ace40  d19 00000000000aa2c8
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f2888828  00000000
+         f288882c  01000100
+         f2888830  00000000
+         f2888834  fffffff9
+         f2888838  f28888b4
+         f288883c  f38eb5c8  /system/lib/libc.so (_ZL33__pthread_mutex_lock_with_timeoutP24pthread_mutex_internal_tbPK8timespec+571)
+         f2888840  f28888b4
+         f2888844  00000000
+         f2888848  f38eb5c8  /system/lib/libc.so (_ZL33__pthread_mutex_lock_with_timeoutP24pthread_mutex_internal_tbPK8timespec+571)
+         f288884c  00000001
+         f2888850  f28888b4
+         f2888854  3b9ac9ff
+         f2888858  f28888b4
+         f288885c  00000000
+         f2888860  3b9ac9ff
+         f2888864  00000000
+    #00  f2888868  f288887c
+         ........  ........
+    #01  f2888868  f288887c
+         f288886c  5c88098c
+         f2888870  00000000
+         f2888874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f2888878  f2888888
+         f288887c  00000000
+    #02  f2888880  00000000
+         f2888884  f33055e0  [anon:libc_malloc]
+         f2888888  00000000
+         f288888c  00000000
+         f2888890  00000000
+         f2888894  00000000
+         f2888898  f3367300  [anon:libc_malloc]
+         f288889c  00000000
+         f28888a0  00000100
+         f28888a4  00000000
+         f28888a8  00000000
+         f28888ac  00000000
+         f28888b0  f3367200  [anon:libc_malloc]
+         f28888b4  00000000
+         f28888b8  5c88098c
+         f28888bc  f3305580  [anon:libc_malloc]
+         ........  ........
+    #03  f28888e0  00000000
+         f28888e4  f2888928
+         f28888e8  f330c020  [anon:libc_malloc]
+         f28888ec  f3305580  [anon:libc_malloc]
+         f28888f0  00000000
+         f28888f4  f33055e0  [anon:libc_malloc]
+         f28888f8  00000000
+         f28888fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f2888900  f2888970
+         f2888904  00000000
+         f2888908  f361f960  [anon:libc_malloc]
+         f288890c  00000000
+         f2888910  f2888970
+         f2888914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f2888918  f361f960  [anon:libc_malloc]
+         f288891c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f2888920  f361f960  [anon:libc_malloc]
+         f2888924  f330c000  [anon:libc_malloc]
+         f2888928  f361f960  [anon:libc_malloc]
+         f288892c  f3618e50  [anon:libc_malloc]
+         f2888930  f361f960  [anon:libc_malloc]
+         f2888934  5c88098c
+         f2888938  f2888970
+         f288893c  f2888970
+         f2888940  f2888970
+         f2888944  00000078
+         f2888948  00000330
+         f288894c  f330c020  [anon:libc_malloc]
+         f2888950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f2888954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f2888958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f288895c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f2888960  f2888978
+         f2888964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f2888968  f2888970
+         f288896c  00000000
+         f2888970  f2985970
+         f2888974  f278b970
+         f2888978  00007df1
+         f288897c  00000330
+         f2888980  00000001
+         f2888984  f278c000  [anon:thread stack guard page]
+         f2888988  000fc970
+         f288898c  00001000
+         f2888990  00000000
+         f2888994  00000000
+         f2888998  00000003
+         f288899c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 32242, name: Binder:816_B  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x7df2
+    r0 00000003  r1 c0306201  r2 f278b888  r3 00000000
+    r4 c0306201  r5 f278b888  r6 f3651580  r7 00000036
+    r8 00000000  r9 f36515ac  sl f278b8a8  fp f278b890
+    ip 00000000  sp f278b868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  383a7265646e6931  d1  f332519000000036
+    d2  000000000000005f  d3  0000000400000044
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202000  d7  00000000f3202008
+    d8  000003f500000330  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 f240300000000001  d17 00001000000fc970
+    d18 0000000000000000  d19 0000000000000000
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f278b828  f3680100  [anon:libc_malloc]
+         f278b82c  f3673a08  [anon:libc_malloc]
+         f278b830  f2b93188  [anon:libc_malloc]
+         f278b834  00000000
+         f278b838  f2b93188  [anon:libc_malloc]
+         f278b83c  f3668110  [anon:libc_malloc]
+         f278b840  0000000f
+         f278b844  f3673a08  [anon:libc_malloc]
+         f278b848  5c88098c
+         f278b84c  00000004
+         f278b850  f36515ac  [anon:libc_malloc]
+         f278b854  f3651580  [anon:libc_malloc]
+         f278b858  00000000
+         f278b85c  00000000
+         f278b860  f36515ac  [anon:libc_malloc]
+         f278b864  f278b8a8
+    #00  f278b868  f278b87c
+         ........  ........
+    #01  f278b868  f278b87c
+         f278b86c  5c88098c
+         f278b870  00000000
+         f278b874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f278b878  f278b888
+         f278b87c  00000000
+    #02  f278b880  0000000d
+         f278b884  f36515e0  [anon:libc_malloc]
+         f278b888  00000000
+         f278b88c  00000000
+         f278b890  00000000
+         f278b894  00000000
+         f278b898  f367fd00  [anon:libc_malloc]
+         f278b89c  00000000
+         f278b8a0  00000100
+         f278b8a4  00000000
+         f278b8a8  00000000
+         f278b8ac  00000000
+         f278b8b0  f367fc00  [anon:libc_malloc]
+         f278b8b4  00000000
+         f278b8b8  5c88098c
+         f278b8bc  f3651580  [anon:libc_malloc]
+         ........  ........
+    #03  f278b8e0  f3651580  [anon:libc_malloc]
+         f278b8e4  f3651580  [anon:libc_malloc]
+         f278b8e8  00000000
+         f278b8ec  f3651580  [anon:libc_malloc]
+         f278b8f0  00000000
+         f278b8f4  f36515e0  [anon:libc_malloc]
+         f278b8f8  00000000
+         f278b8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f278b900  f278b970
+         f278b904  00000000
+         f278b908  f330f960  [anon:libc_malloc]
+         f278b90c  00000000
+         f278b910  f278b970
+         f278b914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f278b918  f330f960  [anon:libc_malloc]
+         f278b91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f278b920  f330f960  [anon:libc_malloc]
+         f278b924  f330c1b0  [anon:libc_malloc]
+         f278b928  f330f960  [anon:libc_malloc]
+         f278b92c  f3618ee0  [anon:libc_malloc]
+         f278b930  f330f960  [anon:libc_malloc]
+         f278b934  5c88098c
+         f278b938  f278b970
+         f278b93c  f278b970
+         f278b940  f278b970
+         f278b944  00000078
+         f278b948  00000330
+         f278b94c  f3618ec0  [anon:libc_malloc]
+         f278b950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f278b954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f278b958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f278b95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f278b960  f278b978
+         f278b964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f278b968  f278b970
+         f278b96c  00000000
+         f278b970  f2888970
+         f278b974  f268e970
+         f278b978  00007df2
+         f278b97c  00000330
+         f278b980  00000001
+         f278b984  f268f000  [anon:thread stack guard page]
+         f278b988  000fc970
+         f278b98c  00001000
+         f278b990  00000000
+         f278b994  00000000
+         f278b998  00000003
+         f278b99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 816, tid: 32244, name: Binder:816_C  >>> /system/bin/mediadrmserver <<<
+signal 5 (SIGTRAP), code -32763 (?), fault addr 0x7df4
+    r0 00000003  r1 c0306201  r2 f268e888  r3 00000000
+    r4 c0306201  r5 f268e888  r6 f3305d00  r7 00000036
+    r8 00000000  r9 f3305d2c  sl f268e8a8  fp f268e890
+    ip 00000000  sp f268e868  lr f38bff0f  pc f38ec400  cpsr 200f0010
+    d0  ffffffffffffffff  d1  f332519000000036
+    d2  000000000000005f  d3  0000000400000043
+    d4  0000000000000004  d5  0000000000000000
+    d6  00000000f3202000  d7  00000000f3202008
+    d8  000003f500000330  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000000  d19 0000000000000000
+    d20 0000000000000002  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 0004a400  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001df0b  /system/lib/libc.so (ioctl+38)
+    #02 pc 000487d1  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+204)
+    #03 pc 000488e1  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+    #04 pc 00048e43  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+38)
+    #05 pc 0005fd75  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+12)
+    #06 pc 0000d551  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+144)
+    #07 pc 00048c9f  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+    #08 pc 0001b09f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         f268e828  f368de00  [anon:libc_malloc]
+         f268e82c  f3673a88  [anon:libc_malloc]
+         f268e830  f2b95188  [anon:libc_malloc]
+         f268e834  00000000
+         f268e838  f2b95188  [anon:libc_malloc]
+         f268e83c  f2b95000  [anon:libc_malloc]
+         f268e840  0000000f
+         f268e844  f3673a88  [anon:libc_malloc]
+         f268e848  5c88098c
+         f268e84c  00000004
+         f268e850  f3305d2c  [anon:libc_malloc]
+         f268e854  f3305d00  [anon:libc_malloc]
+         f268e858  00000000
+         f268e85c  00000000
+         f268e860  f3305d2c  [anon:libc_malloc]
+         f268e864  f268e8a8
+    #00  f268e868  f268e87c
+         ........  ........
+    #01  f268e868  f268e87c
+         f268e86c  5c88098c
+         f268e870  00000000
+         f268e874  f424a7d5  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+208)
+         f268e878  f268e888
+         f268e87c  00000000
+    #02  f268e880  0000000d
+         f268e884  f3305d60  [anon:libc_malloc]
+         f268e888  00000000
+         f268e88c  00000000
+         f268e890  00000000
+         f268e894  00000000
+         f268e898  f3367d00  [anon:libc_malloc]
+         f268e89c  00000000
+         f268e8a0  00000100
+         f268e8a4  00000000
+         f268e8a8  00000000
+         f268e8ac  00000000
+         f268e8b0  f3367c00  [anon:libc_malloc]
+         f268e8b4  00000000
+         f268e8b8  5c88098c
+         f268e8bc  f3305d00  [anon:libc_malloc]
+         ........  ........
+    #03  f268e8e0  00000000
+         f268e8e4  f424b5e9  /system/lib/libbinder.so (_ZN7android14IPCThreadStateC1Ev+124)
+         f268e8e8  f361ff00  [anon:libc_malloc]
+         f268e8ec  f3305d00  [anon:libc_malloc]
+         f268e8f0  00000000
+         f268e8f4  f3305d60  [anon:libc_malloc]
+         f268e8f8  00000000
+         f268e8fc  f424ae47  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+42)
+    #04  f268e900  f268e970
+         f268e904  00000000
+         f268e908  f361ff00  [anon:libc_malloc]
+         f268e90c  00000000
+         f268e910  f268e970
+         f268e914  f4261d79  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+16)
+    #05  f268e918  f361ff00  [anon:libc_malloc]
+         f268e91c  f3f8e553  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+146)
+    #06  f268e920  f361ff00  [anon:libc_malloc]
+         f268e924  f3618fc0  [anon:libc_malloc]
+         f268e928  f361ff00  [anon:libc_malloc]
+         f268e92c  f3618f90  [anon:libc_malloc]
+         f268e930  f361ff00  [anon:libc_malloc]
+         f268e934  5c88098c
+         f268e938  f268e970
+         f268e93c  f268e970
+         f268e940  f268e970
+         f268e944  00000078
+         f268e948  00000330
+         f268e94c  f3618fb0  [anon:libc_malloc]
+         f268e950  f3f8e109  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_)
+         f268e954  f38eaca1  /system/lib/libc.so (_ZL15__pthread_startPv+24)
+    #07  f268e958  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f268e95c  f38bd0a1  /system/lib/libc.so (__start_thread+34)
+    #08  f268e960  f268e978
+         f268e964  f38eac89  /system/lib/libc.so (_ZL15__pthread_startPv)
+         f268e968  f268e970
+         f268e96c  00000000
+         f268e970  f278b970
+         f268e974  f24ff970
+         f268e978  00007df4
+         f268e97c  00000330
+         f268e980  00000001
+         f268e984  f2592000  [anon:thread stack guard page]
+         f268e988  000fc970
+         f268e98c  00001000
+         f268e990  00000000
+         f268e994  00000000
+         f268e998  00000003
+         f268e99c  00000000
+
+open files:
+    fd 0: /dev/null
+    fd 1: /dev/null
+    fd 2: /dev/null
+    fd 3: /dev/binder
+    fd 4: socket:[21831]
+    fd 5: /dev/pmsg0
+    fd 6: /dev/hwbinder
+    fd 7: /sys/kernel/debug/tracing/trace_marker

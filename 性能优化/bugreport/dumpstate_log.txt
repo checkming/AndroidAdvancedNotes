@@ -1,0 +1,493 @@
+can't find the pid
+Failed to find: /data/misc/anrd/
+Skipping systrace because '/sys/kernel/debug/tracing/tracing_on' content is '0'
+Adding dir /cache/recovery (recursive: 1)
+Duration of '/cache/recovery': 0.003s
+Adding dir /data/misc/recovery (recursive: 1)
+Duration of '/data/misc/recovery': 0.006s
+Adding dir /data/misc/update_engine_log (recursive: 1)
+Duration of '/data/misc/update_engine_log': 0.005s
+Adding dir /data/misc/logd (recursive: 0)
+/data/misc/logd: No such file or directory
+Duration of '/data/misc/logd': 0.000s
+Unable to read link for /proc/5222/ns/mnt: No such file or directory
+Unable to read link for /proc/6270/ns/mnt: No such file or directory
+Unable to read link for /proc/6815/ns/mnt: No such file or directory
+Unable to read link for /proc/12393/ns/mnt: No such file or directory
+Unable to read link for /proc/12475/ns/mnt: No such file or directory
+Unable to read link for /proc/13324/ns/mnt: No such file or directory
+MOUNT INFO: 79 entries added to zip file
+Duration of 'MOUNT INFO': 0.155s
+execvp on command 'ss -eionptu' failed (error: No such file or directory)
+*** command 'ss -eionptu' failed: exit code 1
+execvp on command 'iotop -n 1 -m 100' failed (error: No such file or directory)
+*** command 'iotop -n 1 -m 100' failed: exit code 1
+/sys/block/zram0: Permission denied
+/sys/block/mmcblk0: Permission denied
+Warning: Skipping "android.frameworks.displayservice@1.0::IDisplayService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.frameworks.schedulerservice@1.0::ISchedulingPolicyService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.frameworks.sensorservice@1.0::ISensorManager/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.audio.effect@4.0::IEffectsFactory/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.audio@4.0::IDevicesFactory/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.camera.provider@2.4::ICameraProvider/legacy/0": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.cas@1.0::IMediaCasService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.0::ICryptoFactory/clearkey": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.0::ICryptoFactory/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.0::ICryptoFactory/widevine": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.0::IDrmFactory/clearkey": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.0::IDrmFactory/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.0::IDrmFactory/widevine": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.1::ICryptoFactory/clearkey": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.1::ICryptoFactory/widevine": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.1::IDrmFactory/clearkey": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.drm@1.1::IDrmFactory/widevine": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.gatekeeper@1.0::IGatekeeper/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.gnss@1.0::IGnss/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.graphics.composer@2.1::IComposer/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.graphics.composer@2.2::IComposer/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.health@2.0::IHealth/backup": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.health@2.0::IHealth/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.ir@1.0::IConsumerIr/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.keymaster@3.0::IKeymasterDevice/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.light@2.0::ILight/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.media.omx@1.0::IOmx/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.media.omx@1.0::IOmxStore/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.memtrack@1.0::IMemtrack/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.nfc@1.0::INfc/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.nfc@1.1::INfc/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.power@1.0::IPower/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.0::ISecureElement/SIM1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.0::ISecureElement/eSE1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.sensors@1.0::ISensors/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.soundtrigger@2.0::ISoundTriggerHw/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.thermal@1.0::IThermal/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb@1.0::IUsb/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.vr@1.0::IVr/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.wifi.supplicant@1.0::ISupplicant/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.wifi.supplicant@1.1::ISupplicant/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.wifi@1.0::IWifi/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.wifi@1.1::IWifi/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.wifi@1.2::IWifi/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.allocator@1.0::IAllocator/ashmem": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/HwInSExtNode": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/SIM1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/ashmem": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/backup": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/clearkey": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/eSE1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/gpucommon": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/huawei.camera.cfgsvr": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/huawei.cameraresource.service": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/huaweiantitheft": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/huaweisigntool": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/hwfactoryinterface_hal": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/hwhiview_hal": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/hwstp": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/irselflearning": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/legacy/0": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/perfgenius": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/perfpolicy": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/rildi": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/rildi2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/uniperf": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/widevine": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.token@1.0::ITokenManager/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.system.net.netd@1.0::INetd/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.system.net.netd@1.1::INetd/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.system.wifi.keystore@1.0::IKeystore/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.activity_recognition@1.0::IActivityRecognition/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.activity_recognition@1.1::IActivityRecognition/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.biometrics.hwfacerecognize@1.0::IBiometricsFaceRecognize/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.biometrics.hwfacerecognize@1.1::IBiometricsFaceRecognize/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0::ISecureBiometricsFaceRecognize/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.camResource@1.0::IHwCameraResourceService/huawei.cameraresource.service": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.camResource@1.1::IHwCameraResourceService/huawei.cameraresource.service": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.camResource@1.2::IHwCameraResourceService/huawei.cameraresource.service": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.camResource@1.3::IHwCameraResourceService/huawei.cameraresource.service": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.cfgsvr@1.0::IHwCamCfgSvr/huawei.camera.cfgsvr": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.cfgsvr@1.1::IHwCamCfgSvr/huawei.camera.cfgsvr": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.camera.factory@1.0::ICameraFactory/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.fusd@1.0::IFusdLbs/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.fusd@1.1::IFusdLbs/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.fusd@1.2::IFusdLbs/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.fusd@1.3::IFusdLbs/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.gnss@1.0::IHWGnss/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.gnss@1.1::IHWGnss/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hinetmanager@1.0::IHinetmanagerDevice/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hisupl@1.0::ISuplclienttoserverInterface/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hivrar@1.0::IHiVRAR/default": debugging information cannot be retrieved: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+Warning: Skipping "vendor.huawei.hardware.hivrar@1.0::IHiVRAR/default": interfaceChain fails: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+Warning: Skipping "vendor.huawei.hardware.hivrar@1.1::IHiVRAR/default": debugging information cannot be retrieved: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+Warning: Skipping "vendor.huawei.hardware.hivrar@1.1::IHiVRAR/default": interfaceChain fails: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+Warning: Skipping "vendor.huawei.hardware.hivrar@1.2::IHiVRAR/default": debugging information cannot be retrieved: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+Warning: Skipping "vendor.huawei.hardware.hivrar@1.2::IHiVRAR/default": interfaceChain fails: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+Warning: Skipping "vendor.huawei.hardware.huawei_security_vnode@1.0::IHwSecurityVNode/HwInSExtNode": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.huaweiantitheft@1.0::IHuaweiAntiTheft/huaweiantitheft": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.huaweisigntool@1.0::ISignTool/huaweisigntool": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwdisplay.displayengine@1.0::IDisplayEngineWrapper/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwdisplay.displayengine@1.1::IDisplayEngineWrapper/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwdisplay@1.0::IDisplay/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwfactoryinterface@1.0::IHwFactoryInterface/hwfactoryinterface_hal": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwfactoryinterface@1.1::IHwFactoryInterface/hwfactoryinterface_hal": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwfs@1.0::IHwfs/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwhiview@1.0::IHwHiviewInterface/hwhiview_hal": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwstp@1.0::IHwStp/hwstp": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.hwvibrator@1.0::IHWVibrator/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.irsl@1.0::IIrselflearning/irselflearning": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.libteec@2.0::ILibteecGlobal/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.light@2.0::ILight/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.modemchr@1.0::IModemchrDevice/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.nfc@1.0::IHWNfc/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.otherdevices@1.0::IOtherdevices/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.power@1.0::IHWPower/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.chr@1.0::IRadioChr/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.chr@1.0::IRadioChr/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.ims@1.0::IRadioIms/rildi": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio.ims@1.0::IRadioIms/rildi2": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio@2.0::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio@2.0::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.radio@2.0::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.sensors@1.0::ISensors/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.tp@1.0::ITouchscreen/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.wifi.supplicant@2.0::ISupplicant/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.wifi@1.0::IHwWifiExt/default": cannot be fetched from service manager (null)
+Warning: Skipping "vendor.huawei.hardware.wifi@1.1::IHwWifiExt/default": cannot be fetched from service manager (null)
+*** command 'lshal' failed: exit code 136
+android.frameworks.displayservice@1.0::IDisplayService/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.frameworks.displayservice@1.0::IDisplayService/default' failed: exit code 128
+android.frameworks.schedulerservice@1.0::ISchedulingPolicyService/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.frameworks.schedulerservice@1.0::ISchedulingPolicyService/default' failed: exit code 128
+android.frameworks.sensorservice@1.0::ISensorManager/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.frameworks.sensorservice@1.0::ISensorManager/default' failed: exit code 128
+android.hardware.audio.effect@4.0::IEffectsFactory/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.audio.effect@4.0::IEffectsFactory/default' failed: exit code 128
+android.hardware.audio@4.0::IDevicesFactory/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.audio@4.0::IDevicesFactory/default' failed: exit code 128
+android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint/default' failed: exit code 128
+android.hardware.camera.provider@2.4::ICameraProvider/legacy/0 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.camera.provider@2.4::ICameraProvider/legacy/0' failed: exit code 128
+android.hardware.cas@1.0::IMediaCasService/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.cas@1.0::IMediaCasService/default' failed: exit code 128
+android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default' failed: exit code 128
+android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default' failed: exit code 128
+android.hardware.drm@1.0::ICryptoFactory/clearkey does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.0::ICryptoFactory/clearkey' failed: exit code 128
+android.hardware.drm@1.0::ICryptoFactory/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.0::ICryptoFactory/default' failed: exit code 128
+android.hardware.drm@1.0::ICryptoFactory/widevine does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.0::ICryptoFactory/widevine' failed: exit code 128
+android.hardware.drm@1.0::IDrmFactory/clearkey does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.0::IDrmFactory/clearkey' failed: exit code 128
+android.hardware.drm@1.0::IDrmFactory/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.0::IDrmFactory/default' failed: exit code 128
+android.hardware.drm@1.0::IDrmFactory/widevine does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.0::IDrmFactory/widevine' failed: exit code 128
+android.hardware.drm@1.1::ICryptoFactory/clearkey does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.1::ICryptoFactory/clearkey' failed: exit code 128
+android.hardware.drm@1.1::ICryptoFactory/widevine does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.1::ICryptoFactory/widevine' failed: exit code 128
+android.hardware.drm@1.1::IDrmFactory/clearkey does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.1::IDrmFactory/clearkey' failed: exit code 128
+android.hardware.drm@1.1::IDrmFactory/widevine does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.drm@1.1::IDrmFactory/widevine' failed: exit code 128
+android.hardware.gatekeeper@1.0::IGatekeeper/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.gatekeeper@1.0::IGatekeeper/default' failed: exit code 128
+android.hardware.gnss@1.0::IGnss/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.gnss@1.0::IGnss/default' failed: exit code 128
+debug() FAILED on android.hardware.graphics.allocator@2.0::IAllocator/default: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+android.hardware.graphics.composer@2.1::IComposer/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.graphics.composer@2.1::IComposer/default' failed: exit code 128
+android.hardware.graphics.composer@2.2::IComposer/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.graphics.composer@2.2::IComposer/default' failed: exit code 128
+android.hardware.health@2.0::IHealth/backup does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.health@2.0::IHealth/backup' failed: exit code 128
+android.hardware.health@2.0::IHealth/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.health@2.0::IHealth/default' failed: exit code 128
+android.hardware.ir@1.0::IConsumerIr/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.ir@1.0::IConsumerIr/default' failed: exit code 128
+android.hardware.keymaster@3.0::IKeymasterDevice/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.keymaster@3.0::IKeymasterDevice/default' failed: exit code 128
+android.hardware.light@2.0::ILight/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.light@2.0::ILight/default' failed: exit code 128
+android.hardware.media.omx@1.0::IOmx/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.media.omx@1.0::IOmx/default' failed: exit code 128
+android.hardware.media.omx@1.0::IOmxStore/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.media.omx@1.0::IOmxStore/default' failed: exit code 128
+android.hardware.memtrack@1.0::IMemtrack/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.memtrack@1.0::IMemtrack/default' failed: exit code 128
+android.hardware.nfc@1.0::INfc/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.nfc@1.0::INfc/default' failed: exit code 128
+android.hardware.nfc@1.1::INfc/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.nfc@1.1::INfc/default' failed: exit code 128
+android.hardware.power@1.0::IPower/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.power@1.0::IPower/default' failed: exit code 128
+android.hardware.radio@1.0::IRadio/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.radio@1.0::IRadio/slot1' failed: exit code 128
+android.hardware.radio@1.0::IRadio/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.radio@1.0::IRadio/slot2' failed: exit code 128
+android.hardware.radio@1.0::IRadio/slot3 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.radio@1.0::IRadio/slot3' failed: exit code 128
+android.hardware.radio@1.1::IRadio/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.radio@1.1::IRadio/slot1' failed: exit code 128
+android.hardware.radio@1.1::IRadio/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.radio@1.1::IRadio/slot2' failed: exit code 128
+android.hardware.radio@1.1::IRadio/slot3 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.radio@1.1::IRadio/slot3' failed: exit code 128
+android.hardware.secure_element@1.0::ISecureElement/SIM1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.secure_element@1.0::ISecureElement/SIM1' failed: exit code 128
+android.hardware.secure_element@1.0::ISecureElement/eSE1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.secure_element@1.0::ISecureElement/eSE1' failed: exit code 128
+android.hardware.sensors@1.0::ISensors/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.sensors@1.0::ISensors/default' failed: exit code 128
+android.hardware.soundtrigger@2.0::ISoundTriggerHw/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.soundtrigger@2.0::ISoundTriggerHw/default' failed: exit code 128
+android.hardware.thermal@1.0::IThermal/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.thermal@1.0::IThermal/default' failed: exit code 128
+android.hardware.usb@1.0::IUsb/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.usb@1.0::IUsb/default' failed: exit code 128
+android.hardware.vr@1.0::IVr/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.vr@1.0::IVr/default' failed: exit code 128
+android.hardware.wifi.supplicant@1.0::ISupplicant/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.wifi.supplicant@1.0::ISupplicant/default' failed: exit code 128
+android.hardware.wifi.supplicant@1.1::ISupplicant/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.wifi.supplicant@1.1::ISupplicant/default' failed: exit code 128
+android.hardware.wifi@1.0::IWifi/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.wifi@1.0::IWifi/default' failed: exit code 128
+android.hardware.wifi@1.1::IWifi/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.wifi@1.1::IWifi/default' failed: exit code 128
+android.hardware.wifi@1.2::IWifi/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hardware.wifi@1.2::IWifi/default' failed: exit code 128
+android.hidl.allocator@1.0::IAllocator/ashmem does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.allocator@1.0::IAllocator/ashmem' failed: exit code 128
+android.hidl.base@1.0::IBase/HwInSExtNode does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/HwInSExtNode' failed: exit code 128
+android.hidl.base@1.0::IBase/SIM1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/SIM1' failed: exit code 128
+android.hidl.base@1.0::IBase/ashmem does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/ashmem' failed: exit code 128
+android.hidl.base@1.0::IBase/backup does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/backup' failed: exit code 128
+android.hidl.base@1.0::IBase/clearkey does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/clearkey' failed: exit code 128
+android.hidl.base@1.0::IBase/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/default' failed: exit code 128
+android.hidl.base@1.0::IBase/eSE1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/eSE1' failed: exit code 128
+android.hidl.base@1.0::IBase/gpucommon does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/gpucommon' failed: exit code 128
+android.hidl.base@1.0::IBase/huawei.camera.cfgsvr does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/huawei.camera.cfgsvr' failed: exit code 128
+android.hidl.base@1.0::IBase/huawei.cameraresource.service does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/huawei.cameraresource.service' failed: exit code 128
+android.hidl.base@1.0::IBase/huaweiantitheft does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/huaweiantitheft' failed: exit code 128
+android.hidl.base@1.0::IBase/huaweisigntool does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/huaweisigntool' failed: exit code 128
+android.hidl.base@1.0::IBase/hwfactoryinterface_hal does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/hwfactoryinterface_hal' failed: exit code 128
+android.hidl.base@1.0::IBase/hwhiview_hal does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/hwhiview_hal' failed: exit code 128
+android.hidl.base@1.0::IBase/hwstp does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/hwstp' failed: exit code 128
+android.hidl.base@1.0::IBase/irselflearning does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/irselflearning' failed: exit code 128
+android.hidl.base@1.0::IBase/legacy/0 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/legacy/0' failed: exit code 128
+android.hidl.base@1.0::IBase/perfgenius does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/perfgenius' failed: exit code 128
+android.hidl.base@1.0::IBase/perfpolicy does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/perfpolicy' failed: exit code 128
+android.hidl.base@1.0::IBase/rildi does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/rildi' failed: exit code 128
+android.hidl.base@1.0::IBase/rildi2 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/rildi2' failed: exit code 128
+android.hidl.base@1.0::IBase/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/slot1' failed: exit code 128
+android.hidl.base@1.0::IBase/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/slot2' failed: exit code 128
+android.hidl.base@1.0::IBase/slot3 does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/slot3' failed: exit code 128
+android.hidl.base@1.0::IBase/uniperf does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/uniperf' failed: exit code 128
+android.hidl.base@1.0::IBase/widevine does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.base@1.0::IBase/widevine' failed: exit code 128
+debug() FAILED on android.hidl.manager@1.1::IServiceManager/default: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+android.hidl.token@1.0::ITokenManager/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.hidl.token@1.0::ITokenManager/default' failed: exit code 128
+android.system.net.netd@1.0::INetd/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.system.net.netd@1.0::INetd/default' failed: exit code 128
+android.system.net.netd@1.1::INetd/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.system.net.netd@1.1::INetd/default' failed: exit code 128
+android.system.wifi.keystore@1.0::IKeystore/default does not exist, or no permission to connect.
+*** command 'lshal debug -E android.system.wifi.keystore@1.0::IKeystore/default' failed: exit code 128
+vendor.huawei.hardware.activity_recognition@1.0::IActivityRecognition/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.activity_recognition@1.0::IActivityRecognition/default' failed: exit code 128
+vendor.huawei.hardware.activity_recognition@1.1::IActivityRecognition/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.activity_recognition@1.1::IActivityRecognition/default' failed: exit code 128
+vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint/default' failed: exit code 128
+vendor.huawei.hardware.biometrics.hwfacerecognize@1.0::IBiometricsFaceRecognize/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.biometrics.hwfacerecognize@1.0::IBiometricsFaceRecognize/default' failed: exit code 128
+vendor.huawei.hardware.biometrics.hwfacerecognize@1.1::IBiometricsFaceRecognize/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.biometrics.hwfacerecognize@1.1::IBiometricsFaceRecognize/default' failed: exit code 128
+vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0::ISecureBiometricsFaceRecognize/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0::ISecureBiometricsFaceRecognize/default' failed: exit code 128
+vendor.huawei.hardware.camera.camResource@1.0::IHwCameraResourceService/huawei.cameraresource.service does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.camResource@1.0::IHwCameraResourceService/huawei.cameraresource.service' failed: exit code 128
+vendor.huawei.hardware.camera.camResource@1.1::IHwCameraResourceService/huawei.cameraresource.service does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.camResource@1.1::IHwCameraResourceService/huawei.cameraresource.service' failed: exit code 128
+vendor.huawei.hardware.camera.camResource@1.2::IHwCameraResourceService/huawei.cameraresource.service does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.camResource@1.2::IHwCameraResourceService/huawei.cameraresource.service' failed: exit code 128
+vendor.huawei.hardware.camera.camResource@1.3::IHwCameraResourceService/huawei.cameraresource.service does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.camResource@1.3::IHwCameraResourceService/huawei.cameraresource.service' failed: exit code 128
+vendor.huawei.hardware.camera.cfgsvr@1.0::IHwCamCfgSvr/huawei.camera.cfgsvr does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.cfgsvr@1.0::IHwCamCfgSvr/huawei.camera.cfgsvr' failed: exit code 128
+vendor.huawei.hardware.camera.cfgsvr@1.1::IHwCamCfgSvr/huawei.camera.cfgsvr does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.cfgsvr@1.1::IHwCamCfgSvr/huawei.camera.cfgsvr' failed: exit code 128
+vendor.huawei.hardware.camera.factory@1.0::ICameraFactory/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.camera.factory@1.0::ICameraFactory/default' failed: exit code 128
+vendor.huawei.hardware.fusd@1.0::IFusdLbs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.fusd@1.0::IFusdLbs/default' failed: exit code 128
+vendor.huawei.hardware.fusd@1.1::IFusdLbs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.fusd@1.1::IFusdLbs/default' failed: exit code 128
+vendor.huawei.hardware.fusd@1.2::IFusdLbs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.fusd@1.2::IFusdLbs/default' failed: exit code 128
+vendor.huawei.hardware.fusd@1.3::IFusdLbs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.fusd@1.3::IFusdLbs/default' failed: exit code 128
+vendor.huawei.hardware.gnss@1.0::IHWGnss/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.gnss@1.0::IHWGnss/default' failed: exit code 128
+vendor.huawei.hardware.gnss@1.1::IHWGnss/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.gnss@1.1::IHWGnss/default' failed: exit code 128
+debug() FAILED on vendor.huawei.hardware.graphics.mediacomm@2.0::IMediaComm/default: Status(EX_TRANSACTION_FAILED): 'FAILED_TRANSACTION: '
+vendor.huawei.hardware.hinetmanager@1.0::IHinetmanagerDevice/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hinetmanager@1.0::IHinetmanagerDevice/default' failed: exit code 128
+vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot1' failed: exit code 128
+vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot2' failed: exit code 128
+vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot3 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hisiradio@1.0::IHisiRadio/slot3' failed: exit code 128
+vendor.huawei.hardware.hisupl@1.0::ISuplclienttoserverInterface/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hisupl@1.0::ISuplclienttoserverInterface/default' failed: exit code 128
+vendor.huawei.hardware.hivrar@1.0::IHiVRAR/default getDescriptor failed
+vendor.huawei.hardware.hivrar@1.1::IHiVRAR/default getDescriptor failed
+vendor.huawei.hardware.hivrar@1.2::IHiVRAR/default getDescriptor failed
+vendor.huawei.hardware.huawei_security_vnode@1.0::IHwSecurityVNode/HwInSExtNode does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.huawei_security_vnode@1.0::IHwSecurityVNode/HwInSExtNode' failed: exit code 128
+vendor.huawei.hardware.huaweiantitheft@1.0::IHuaweiAntiTheft/huaweiantitheft does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.huaweiantitheft@1.0::IHuaweiAntiTheft/huaweiantitheft' failed: exit code 128
+vendor.huawei.hardware.huaweisigntool@1.0::ISignTool/huaweisigntool does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.huaweisigntool@1.0::ISignTool/huaweisigntool' failed: exit code 128
+vendor.huawei.hardware.hwdisplay.displayengine@1.0::IDisplayEngineWrapper/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwdisplay.displayengine@1.0::IDisplayEngineWrapper/default' failed: exit code 128
+vendor.huawei.hardware.hwdisplay.displayengine@1.1::IDisplayEngineWrapper/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwdisplay.displayengine@1.1::IDisplayEngineWrapper/default' failed: exit code 128
+vendor.huawei.hardware.hwdisplay@1.0::IDisplay/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwdisplay@1.0::IDisplay/default' failed: exit code 128
+vendor.huawei.hardware.hwfactoryinterface@1.0::IHwFactoryInterface/hwfactoryinterface_hal does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwfactoryinterface@1.0::IHwFactoryInterface/hwfactoryinterface_hal' failed: exit code 128
+vendor.huawei.hardware.hwfactoryinterface@1.1::IHwFactoryInterface/hwfactoryinterface_hal does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwfactoryinterface@1.1::IHwFactoryInterface/hwfactoryinterface_hal' failed: exit code 128
+vendor.huawei.hardware.hwfs@1.0::IHwfs/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwfs@1.0::IHwfs/default' failed: exit code 128
+vendor.huawei.hardware.hwhiview@1.0::IHwHiviewInterface/hwhiview_hal does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwhiview@1.0::IHwHiviewInterface/hwhiview_hal' failed: exit code 128
+vendor.huawei.hardware.hwstp@1.0::IHwStp/hwstp does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwstp@1.0::IHwStp/hwstp' failed: exit code 128
+vendor.huawei.hardware.hwvibrator@1.0::IHWVibrator/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.hwvibrator@1.0::IHWVibrator/default' failed: exit code 128
+vendor.huawei.hardware.irsl@1.0::IIrselflearning/irselflearning does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.irsl@1.0::IIrselflearning/irselflearning' failed: exit code 128
+vendor.huawei.hardware.libteec@2.0::ILibteecGlobal/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.libteec@2.0::ILibteecGlobal/default' failed: exit code 128
+vendor.huawei.hardware.light@2.0::ILight/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.light@2.0::ILight/default' failed: exit code 128
+vendor.huawei.hardware.modemchr@1.0::IModemchrDevice/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.modemchr@1.0::IModemchrDevice/default' failed: exit code 128
+vendor.huawei.hardware.nfc@1.0::IHWNfc/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.nfc@1.0::IHWNfc/default' failed: exit code 128
+vendor.huawei.hardware.otherdevices@1.0::IOtherdevices/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.otherdevices@1.0::IOtherdevices/default' failed: exit code 128
+vendor.huawei.hardware.power@1.0::IHWPower/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.power@1.0::IHWPower/default' failed: exit code 128
+vendor.huawei.hardware.radio.chr@1.0::IRadioChr/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.chr@1.0::IRadioChr/slot1' failed: exit code 128
+vendor.huawei.hardware.radio.chr@1.0::IRadioChr/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.chr@1.0::IRadioChr/slot2' failed: exit code 128
+vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot1' failed: exit code 128
+vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot2' failed: exit code 128
+vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot3 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.deprecated@1.0::IOemHook/slot3' failed: exit code 128
+vendor.huawei.hardware.radio.ims@1.0::IRadioIms/rildi does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.ims@1.0::IRadioIms/rildi' failed: exit code 128
+vendor.huawei.hardware.radio.ims@1.0::IRadioIms/rildi2 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio.ims@1.0::IRadioIms/rildi2' failed: exit code 128
+vendor.huawei.hardware.radio@2.0::IRadio/slot1 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio@2.0::IRadio/slot1' failed: exit code 128
+vendor.huawei.hardware.radio@2.0::IRadio/slot2 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio@2.0::IRadio/slot2' failed: exit code 128
+vendor.huawei.hardware.radio@2.0::IRadio/slot3 does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.radio@2.0::IRadio/slot3' failed: exit code 128
+vendor.huawei.hardware.sensors@1.0::ISensors/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.sensors@1.0::ISensors/default' failed: exit code 128
+vendor.huawei.hardware.tp@1.0::ITouchscreen/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.tp@1.0::ITouchscreen/default' failed: exit code 128
+vendor.huawei.hardware.wifi.supplicant@2.0::ISupplicant/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.wifi.supplicant@2.0::ISupplicant/default' failed: exit code 128
+vendor.huawei.hardware.wifi@1.0::IHwWifiExt/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.wifi@1.0::IHwWifiExt/default' failed: exit code 128
+vendor.huawei.hardware.wifi@1.1::IHwWifiExt/default does not exist, or no permission to connect.
+*** command 'lshal debug -E vendor.huawei.hardware.wifi@1.1::IHwWifiExt/default' failed: exit code 128
+Adding dir /data/misc/bluetooth/logs (recursive: 1)
+Duration of '/data/misc/bluetooth/logs': 0.008s
+taking late screenshot
+drop_root_user(): already running as Shell
+Error opening file:  (No such file or directory)
+*** command '/system/bin/screencap -p ' failed: exit code 1
+Failed to take screenshot on 
+logcat read failure
+*** command 'logcat -L -b all -v threadtime -v printable -v uid -d *:v' failed: exit code 1
+AddAnrTraceDir(): dump_traces_file=/data/anr/dumptrace_CGYkDZ, anr_traces_dir=/data/anr
+Dumping current ANR traces (/data/anr/dumptrace_CGYkDZ) to the main bugreport entry
+Error unlinking temporary trace path /data/anr/dumptrace_CGYkDZ: Permission denied
+execvp on command 'parse_radio_log /proc/last_radio_log' failed (error: No such file or directory)
+*** command 'parse_radio_log /proc/last_radio_log' failed: exit code 1
+No IDumpstateDevice implementation
+Can't find service: BootAnimationBinderServer
+Error dumping service info: (Unknown error -2147483646) ITouchservice
+Can't find service: android.os.UpdateEngineService
+Error dumping service info: (Unknown error -2147483646) com.huawei.servicehost
+Error dumping service info: (Unknown error -2147483646) iGraphicsservice
+Error dumping service info: (Unknown error -74) ims_config
+Can't find service: incident
+Can't find service: vold
+Adjusting max progress from 7502 to 8290
+Adding main entry (bugreport-STF-AL10-HUAWEISTF-AL10-2019-08-29-10-01-28.txt) from /data/user_de/0/com.android.shell/files/bugreports/bugreport-STF-AL10-HUAWEISTF-AL10-2019-08-29-10-01-28.tmp to .zip bugreport
+dumpstate id 3 finished around 2019/08/29 10:03:54 (146 s)
+Adding zip text entry main_entry.txt
+dumpstate_log.txt entry on zip file logged up to here
