@@ -1,0 +1,123 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.ui.themes
+Bundle-SymbolicName: org.eclipse.ui.themes;singleton:=true
+Built-By: genie.releng
+Require-Bundle: org.eclipse.e4.ui.css.swt.theme
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.ui.git;path="bundles/org.eclipse.ui.themes";tag="
+ I20180514-2000";commitId=7fa79d089c005366a2e1b1eaba9b1adcbe5756af
+Bundle-Vendor: %Plugin.providerName
+Bundle-Name: %Plugin.name
+Bundle-Version: 1.2.100.v20180514-1547
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.3.3
+Build-Jdk: 1.8.0_162
+Eclipse-BundleShape: dir
+
+Name: images/winXPHandle.png
+SHA-256-Digest: pBPfEx6cl7hFSpL7ZACUVpzIzbj7K1k+1PSQ83CdKQI=
+
+Name: plugin.xml
+SHA-256-Digest: SRkLj49NIms79STPjdiP0ClK4Uyu4HWmF8MGr9XcxLM=
+
+Name: css/e4_classic_win7.css
+SHA-256-Digest: oGUnDjRdOkD3LM/G5v6ku/gKwt2eP9zYtuy2Fec+LyM=
+
+Name: css/high-contrast.css
+SHA-256-Digest: L9MPyRBZDz+u8iIk25P+oxyBGVOS1TazDqxZDGhwbHk=
+
+Name: css/e4_default_gtk.css
+SHA-256-Digest: OLBUmc81r7W8PKMoOvsKFZLtOC3UlB3vuYU98b+ymXE=
+
+Name: css/e4-dark_mac.css
+SHA-256-Digest: 40u7t7Cl6YDrwOlhcE5PChqr51yEm2NYsj/0AgCqKxE=
+
+Name: images/macTSFrame.png
+SHA-256-Digest: M3rItx5OQNbjSEcf3s6v6r/fdjPHGVphm9pPXrrFjSo=
+
+Name: css/e4-dark.css
+SHA-256-Digest: YX9cGakXhH8LfjrQlZF6moaH1PQVGVjbXB7KRDgKBfQ=
+
+Name: images/gtkTSFrame.png
+SHA-256-Digest: RXrytpobfQof4fdvoZemowpbecapF5rGLHiphhETfgU=
+
+Name: images/win7.png
+SHA-256-Digest: efoA3wIEengi95NOOq6cPcK5t8WWC17Imhd1pUg24EQ=
+
+Name: css/dark/e4-dark_basestyle.css
+SHA-256-Digest: 5OH5YUKgH7iPSzudt0/eQyGisXz1TbuZNTX5ZQ/p8yo=
+
+Name: css/e4-dark_win.css
+SHA-256-Digest: BDqhu/Da9de1TCrf52m5wVgeRnzmZXhvI5OpvLuNZBc=
+
+Name: css/e4_default_win.css
+SHA-256-Digest: wtvttB2l9Qw7dWWWv/IKNyy4lMgTsHMUqz3eoO16R60=
+
+Name: css/e4_classic_winxp.css
+SHA-256-Digest: oGUnDjRdOkD3LM/G5v6ku/gKwt2eP9zYtuy2Fec+LyM=
+
+Name: images/winClassicTSFrame.png
+SHA-256-Digest: nduBZyaRKYEb7AwQe9nJPmYKatjNn52v4PZJ/L6coqg=
+
+Name: plugin.properties
+SHA-256-Digest: rUXUwixCruXlqowfpBjUxsF9oou2hBt+rdkixhsnq+o=
+
+Name: images/macHandle.png
+SHA-256-Digest: abfWjboVti7Wyoz/V+PuqslhrvOJnRbnRThEwDmpaZM=
+
+Name: images/winXPOlive.png
+SHA-256-Digest: C2Ipw7OnxlmPOUHTn4Db7gPMWvdb4/4NAO0ib74Aef8=
+
+Name: css/dark/e4-dark_partstyle.css
+SHA-256-Digest: qWngm8ut6OKn/zDAJEiTJIClkROB/g7Q0EOXhk423YQ=
+
+Name: images/macGrey.png
+SHA-256-Digest: +WWQ7VMreL1siXqXdo6NPT7M+IBBYQd7U3o8NYCZ09I=
+
+Name: css/e4_default_mac.css
+SHA-256-Digest: R+lNrVVT+SPrUX4FXlbCArzLB+ZQSX9bCqU6AY6fZqE=
+
+Name: about.html
+SHA-256-Digest: 0RM1x9lTJa7T8YkysaegPuBIeaEvSZypRDfXoMpsJAU=
+
+Name: css/dark/e4-dark_globalstyle.css
+SHA-256-Digest: ws2te2NhqY3351/DEL5daB+sXtP5ZwOV3tBkYmRNIMw=
+
+Name: images/winXPTSFrame.png
+SHA-256-Digest: DQuegTqQkj0+OOF8iUzPb9s8mINYAJCfmyZGEbm8E9I=
+
+Name: images/win7Handle.png
+SHA-256-Digest: Oh9SF8i5+kQ24zAMTJ4ui/Br4S+UTaQVVH0t5BaCDhc=
+
+Name: css/e4_basestyle.css
+SHA-256-Digest: lABYITkiZ9iNz7NsBNqbtbuVToNBlPc2IrGjDw6vP5s=
+
+Name: images/dragHandle.png
+SHA-256-Digest: 7wzoK/YKkvvCnGK7UkXKxj7t2YLYsYKAPSkmi2L3dU4=
+
+Name: images/gtkHandle.png
+SHA-256-Digest: bPbRP2bshPbwfMIAElSBK1iF0CsqLCp1l3hrfna6Xlo=
+
+Name: images/winClassicHandle.png
+SHA-256-Digest: C7ztgrKYAkqoYZG59II171ZDVFmke75zl/KHLbEYx7Q=
+
+Name: images/winXPBluTSFrame.png
+SHA-256-Digest: K9XImyMWZ18rxhm/lP4JhwbJDrd6AmBvuelzPMtmWuc=
+
+Name: images/winXPBluHandle.png
+SHA-256-Digest: ISk+95nFyPE60FJ86zTGJzs8KE7mXTEMyi2QH82Xyi0=
+
+Name: images/win7TSFrame.png
+SHA-256-Digest: jJtgiMPzFQCTjyVZQQCiR5vbkbVN2RHEiHYENYqVEh4=
+
+Name: images/winXPBlue.png
+SHA-256-Digest: 7WOW/TPpt8xJyyfe2OUivBYJgj0cIoWySp0IJ+HrX6o=
+
+Name: css/e4_default_mru_on_win7.css
+SHA-256-Digest: 1Qz04Rrf/T7+pNKxxQLlgPeCPJi+07DMyCJwSyt4YlI=
+
+Name: css/dark/e4-dark_preferencestyle.css
+SHA-256-Digest: H1HM1K6Z0t1qE97BYtDRe6AB/Itn2VdEKkRQ6NxbKo8=
+

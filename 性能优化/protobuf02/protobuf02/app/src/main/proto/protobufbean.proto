@@ -1,0 +1,32 @@
+// String name
+// int id
+// email
+
+syntax = "proto3";
+package com.example.protobufdemo;//包名
+
+
+option java_package = "com.example.protobuf02";
+option  java_outer_classname = "Person";
+option csharp_namespace = "android";
+message _Person{
+
+    string name = 1;
+    int32 id = 2;
+    string email = 3;
+
+    enum _PhoneType{
+        MOBILE = 0;
+        HOME = 1;
+        WORK = 2;
+    }
+
+    message _PhoneNumber{
+        string number =1;
+        _PhoneType type = 2;
+    }
+
+    repeated _PhoneNumber phone = 4;//数组
+
+
+}

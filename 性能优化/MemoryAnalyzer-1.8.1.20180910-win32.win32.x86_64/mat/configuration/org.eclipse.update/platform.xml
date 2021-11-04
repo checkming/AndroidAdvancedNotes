@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1537453472644" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.ecf.filetransfer.httpclient4.feature" version="3.14.0.v20180301-0132" url="features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.14.0.v20180301-0132/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.100.v20180301-0132" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.100.v20180301-0132/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.feature" version="3.14.0.v20180306-0429" url="features/org.eclipse.ecf.filetransfer.feature_3.14.0.v20180306-0429/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.feature" version="1.5.0.v20180426-1936" url="features/org.eclipse.ecf.core.feature_1.5.0.v20180426-1936/">
+		</feature>
+		<feature id="org.eclipse.help" version="2.2.200.v20180611-0500" url="features/org.eclipse.help_2.2.200.v20180611-0500/" plugin-identifier="org.eclipse.help.base">
+		</feature>
+		<feature id="org.eclipse.mat.ui.rcp.feature" version="1.8.1.201809100846" url="features/org.eclipse.mat.ui.rcp.feature_1.8.1.201809100846/" plugin-identifier="org.eclipse.mat.ui.rcp">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.14.0.v20180527-1134" url="features/org.eclipse.emf.common_2.14.0.v20180527-1134/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" version="2.4.0.v20180515-1348" url="features/org.eclipse.equinox.p2.user.ui_2.4.0.v20180515-1348/">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="1.6.100.v20180611-0422" url="features/org.eclipse.e4.rcp_1.6.100.v20180611-0422/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.14.0.v20180529-1144" url="features/org.eclipse.emf.ecore_2.14.0.v20180529-1144/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.8.0.v20180611-0656" url="features/org.eclipse.rcp_4.8.0.v20180611-0656/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.ssl.feature" version="1.1.100.v20180301-0201" url="features/org.eclipse.ecf.core.ssl.feature_1.1.100.v20180301-0201/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature" version="1.1.100.v20180301-0132" url="features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.1.100.v20180301-0132/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" version="1.5.0.v20180515-1348" url="features/org.eclipse.equinox.p2.core.feature_1.5.0.v20180515-1348/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" version="1.4.0.v20180515-1348" url="features/org.eclipse.equinox.p2.rcp.feature_1.4.0.v20180515-1348/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.extras.feature" version="1.4.0.v20180515-1348" url="features/org.eclipse.equinox.p2.extras.feature_1.4.0.v20180515-1348/">
+		</feature>
+	</site>
+</config>

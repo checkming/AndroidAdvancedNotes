@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.mat.ui.rcp.feature"
+      label="%featureName"
+      version="1.8.1.201809100846"
+      provider-name="%providerName"
+      plugin="org.eclipse.mat.ui.rcp">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://download.eclipse.org/mat/1.8/update-site/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.platform" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.intro" version="3.2.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.3.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.views.log" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.net" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.cheatsheets" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.forms" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help.base" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.birt.chart.engine" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.birt.chart.device.extension" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.birt.chart.device.swt" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.birt.chart.engine.extension" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.birt.core" version="2.3.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.mat.ui.rcp"
+         download-size="98"
+         install-size="162"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+         
+   <plugin
+         id="org.eclipse.mat.report"
+         download-size="338"
+         install-size="653"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.api"
+         download-size="829"
+         install-size="1728"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.hprof"
+         download-size="84"
+         install-size="165"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.parser"
+         download-size="361"
+         install-size="749"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.ui"
+         download-size="868"
+         install-size="1796"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.ui.help"
+         download-size="7783"
+         install-size="34433"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.dtfj"
+         download-size="128"
+         install-size="280"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.ibmdumps"
+         download-size="63"
+         install-size="119"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.jruby.resolver"
+         download-size="22"
+         install-size="39"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+         
+   <plugin
+         id="org.eclipse.mat.chart"
+         download-size="27"
+         install-size="47"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mat.chart.ui"
+         download-size="28"
+         install-size="50"
+         version="1.8.1.201809100846"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package com.example.protobufdemo;//包名
+
+option java_package = "com.example.protobuf02";
+option  java_outer_classname = "Address";
+option csharp_namespace = "android";
+
+message _Address{
+    string address = 1;
+}
